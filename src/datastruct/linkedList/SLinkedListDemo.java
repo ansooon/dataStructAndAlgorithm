@@ -1,8 +1,5 @@
 package datastruct.linkedList;
 
-import sun.security.util.Length;
-
-import java.util.List;
 
 /**
  * @author zhongshanhuang
@@ -84,7 +81,38 @@ public class SLinkedListDemo {
 //            System.out.println(cycleLength);
 //        }
 
+        //方法10，取环状链表的初始节点
+//        sLinkedList.addTail(sLinkedList.findNode(5));
+//        if(sLinkedList.hasCycle()){
+//            int cycleLength = sLinkedList.getCycleLength(sLinkedList.getCycleNode());
+//            System.out.println(cycleLength);
+//            SLinkedList.Node  cycleStartNode = sLinkedList.getCycleStartNode(cycleLength);
+//            System.out.println(cycleStartNode);
+//        }
 
+        //方法11，判断两个单链表相交的第一个交点
+        SLinkedList sLinkedList1 = new SLinkedList();
+        SLinkedList sLinkedList2 = new SLinkedList();
+        SLinkedList sLinkedList3 = new SLinkedList();
+        sLinkedList1.addTail(1);
+        sLinkedList1.addTail(2);
+        sLinkedList1.addTail(3);
+        sLinkedList1.addTail(4);
+        sLinkedList1.addTail(5);
+        sLinkedList1.addTail(6);
+        sLinkedList1.addTail(7);
+        sLinkedList1.addTail(8);
+        sLinkedList1.addTail(9);
+        sLinkedList1.printNodeData();
+        System.out.println();
+
+        sLinkedList2.addTail(3);
+        sLinkedList2.addTail(4);
+        sLinkedList2.addTail(5);
+        sLinkedList2.addTail(sLinkedList1.findNode(6));
+        sLinkedList2.printNodeData();
+        SLinkedList.Node  firstCommonNode = sLinkedList3.getFirstCommonNode(sLinkedList1, sLinkedList2);
+        System.out.println(firstCommonNode);
     }
 
 
@@ -123,6 +151,14 @@ class SLinkedList{
         }
 
         current = node;
+        while(current != null){
+            System.out.println(current.data); //sout
+            current = current.next; //结论1：current=null时退出循环，因此条件写的是current != null，迭代条件放在末尾
+        }
+    }
+
+    public void printNodeData(){
+        Node current = head;
         while(current != null){
             System.out.println(current.data); //sout
             current = current.next; //结论1：current=null时退出循环，因此条件写的是current != null，迭代条件放在末尾
@@ -401,6 +437,78 @@ class SLinkedList{
                 return cycleLength;
             }
         }
+    }
+
+    //方法10，单链表中，取出环的起始点.思路：这里我们需要利用到上面第8小节的取出环的长度的方法getCycleLength，用这个方法来获取环的长度length。拿到环的长度length之后，需要用到两个指针变量first和second，先让second指针走length步；然后让first指针和second指针同时各走一步，当两个指针相遇时，相遇时的结点就是环的起始点。
+    public Node getCycleStartNode(int cycleLength){
+        if(head == null){
+            return null;
+        }
+
+        Node first = head;
+        Node second = head;
+
+        //先让second指针走length步
+        for (int i = 0; i < cycleLength; i++) {
+            second = second.next;
+        }
+
+        //然后让first指针和second指针同时各走一步
+        while (first != null && second!= null){
+            first = first.next;
+            second = second.next;
+
+            if(first == second){  //如果两个指针相遇了，说明这个结点就是环的起始点
+                return first;
+            }
+        }
+
+        return null;
+    }
+
+    //方法11：判断两个单链表相交的第一个交点
+    public Node getFirstCommonNode(SLinkedList sLinkedList1, SLinkedList sLinkedList2) {
+        Node head1 =  sLinkedList1.head;
+        Node head2 =  sLinkedList2.head;
+
+        if(head1 == null || head1 == null){
+            return null;
+        }
+
+        int length1 = sLinkedList1.getLength();
+        int length2 = sLinkedList2.getLength();
+        int lengthDif;
+
+        Node longHead;
+        Node shortHead;
+
+        //找出较长的那个链表
+        if(length1 > length2){
+            longHead = head1;
+            shortHead = head2;
+            lengthDif = length1 - length2;
+        }else{
+            longHead = head2;
+            shortHead = head1;
+            lengthDif = length2 - length1;
+        }
+
+        //将较长的那个链表的指针向前走length个距离
+        for (int i = 0; i < lengthDif; i++) {
+            longHead = longHead.next;
+        }
+
+        //将两个链表的指针同时向前移动
+        while (longHead != null && shortHead != null){
+            if(longHead == shortHead){
+                return longHead;  //第一个相同的结点就是相交的第一个结点
+            }
+
+            longHead = longHead.next;
+            shortHead  = shortHead .next;
+        }
+
+        return null;
     }
 
 }
