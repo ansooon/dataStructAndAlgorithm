@@ -1,10 +1,10 @@
 package datastruct.linkedList;
 
 
-import java.util.Hashtable;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Node;
 
 /**
  * @author zhongshanhuang
@@ -21,14 +21,15 @@ public class SLinkedListDemo {
 
         //方法1-1，尾部添加
         sLinkedList.addTail(1);
-        sLinkedList.addTail(2);
         sLinkedList.addTail(3);
-        sLinkedList.addTail(4);
-        sLinkedList.addTail(5);
-        sLinkedList.addTail(8);
-        sLinkedList.addTail(7);
-        sLinkedList.addTail(7);
-        sLinkedList.addTail(7);
+        sLinkedList.addTail(2);
+        sLinkedList.addTail(1);
+//        sLinkedList.addTail(4);
+//        sLinkedList.addTail(5);
+//        sLinkedList.addTail(8);
+//        sLinkedList.addTail(7);
+//        sLinkedList.addTail(7);
+//        sLinkedList.addTail(7);
 //        sLinkedList.printNodeData(sLinkedList.head);
 
         //方法1-2，头部添加
@@ -163,9 +164,9 @@ public class SLinkedListDemo {
 
         //方法12，排序
 //        sLinkedList.sortByData();
-//        sLinkedList.sortByNode();
+        sLinkedList.sortByNode();
 //        sLinkedList.sortByCreateNode();
-//        sLinkedList.printNodeData();
+        sLinkedList.printNodeData();
 
         //方法13，去重
 //        sLinkedList.distinctLink();
@@ -719,21 +720,21 @@ class SLinkedList{
                 //先把cur节点从当前链表中删除，然后再把cur节点插入到合适位置
                 pre.next = cur.next;
                 //从前往后找到node2.val>cur.val,然后把cur节点插入到node1和node2之间
-                Node node1 = helperHead;
-                Node node2 = helperHead.next;
-                while (cur.data > node2.data) {
-                    node1 = node2;
-                    node2 = node2.next;
+                Node first = helperHead;
+                Node second = helperHead.next;
+                while (cur.data > second.data) {
+                    second = second.next;
+                    first = first.next;
                 }
                 //把cur节点插入到node1和node2之间
-                node1.next = cur;
-                cur.next = node2;
+                cur.next = second;
+                first.next = cur;
                 //cur节点向后移动一位
                 cur = pre.next;
 
             } else {
                 //向后移动
-                pre = cur;
+                pre = pre.next;
                 cur = cur.next;
             }
         }
@@ -781,16 +782,16 @@ class SLinkedList{
          * 去掉重复元素:
          * 需要额外的存储空间hashtable，调用hashtable.containsKey()来判断重复结点
          */
-        public void distinctLink(){
+        public void distinctLink() {
             Node temp = head;
             Node pre = null;
-            Hashtable<Integer, Integer> hb = new Hashtable<Integer, Integer>();
-            while(temp != null){
-                if(hb.containsKey(temp.data)){//如果hashtable中已存在该结点，则跳过该结点
+            Map<Integer, Integer> map = new HashMap<>();
+            while (temp != null) {
+                if (map.containsKey(temp.data)) {//如果hashtable中已存在该结点，则跳过该结点
                     pre.next = temp.next;
-                }else{//如果hashtable中不存在该结点，将结点存到hashtable中
-                    hb.put(temp.data, 1);
-                    pre=temp;
+                } else {//如果hashtable中不存在该结点，将结点存到hashtable中
+                    map.put(temp.data, 1);
+                    pre = temp;
                 }
                 temp = temp.next;
             }
