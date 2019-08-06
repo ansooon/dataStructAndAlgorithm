@@ -164,6 +164,7 @@ public class SLinkedListDemo {
         //方法12，排序
 //        sLinkedList.sortByData();
 //        sLinkedList.sortByNode();
+//        sLinkedList.sortByCreateNode();
 //        sLinkedList.printNodeData();
 
         //方法13，去重
@@ -678,55 +679,6 @@ class SLinkedList{
     }
 
 
-    //对链表进行排序
-/*    public void sort(){
-        if(head == null || head.next == null){
-            return;
-        }
-
-        Node current = head;
-        Node sortHead = null;  //记录排序链表的表头
-        Node sortCurrent = null; //记录排序链表的当前节点
-        int count = 0;
-
-        while (current != null){
-            if(sortHead == null) {  //初始化第一个
-                sortHead = head;
-                sortCurrent = sortHead;
-                count++;
-            }else if(count == 1){  // //初始化第二个
-                if(current.data > sortCurrent.data){
-                    sortHead.next = current;
-                    sortCurrent = sortHead.next;
-                }else{
-                    current.next = sortHead;
-                    sortHead = current;
-                    sortCurrent = sortHead.next;
-                }
-                count++;
-            } else{
-                while (true){
-                    if(sortCurrent.next == null){  //末尾
-                        break;
-                    }
-
-                    if(current.data > sortCurrent.next.data){ //下一个节点
-                        break;
-                    }
-
-                    sortCurrent = sortCurrent.next;
-                }
-
-                current.next = sortCurrent.next;
-                sortCurrent.next = current;
-            }
-
-            current = current.next;
-        }
-
-        head = sortHead;
-    }*/
-
 
     //方法12，值排序（注意交换的是值）
     public void sortByData(){
@@ -760,15 +712,15 @@ class SLinkedList{
         //当前待排序的节点
         Node cur = head.next;
         //辅助节点，永远指向头结点
-        Node helper = new Node(0);
-        helper.next = head;
+        Node helperHead = new Node(0);
+        helperHead.next = head;
         while (cur != null) {
             if (cur.data < pre.data) {
                 //先把cur节点从当前链表中删除，然后再把cur节点插入到合适位置
                 pre.next = cur.next;
                 //从前往后找到node2.val>cur.val,然后把cur节点插入到node1和node2之间
-                Node node1 = helper;
-                Node node2 = helper.next;
+                Node node1 = helperHead;
+                Node node2 = helperHead.next;
                 while (cur.data > node2.data) {
                     node1 = node2;
                     node2 = node2.next;
@@ -785,7 +737,43 @@ class SLinkedList{
                 cur = cur.next;
             }
         }
-        head = helper.next;
+        head = helperHead.next;
+    }
+
+    //对链表进行排序
+    public void sortByCreateNode() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node current = head;
+        Node sortHead = new Node(0);
+        //记录排序链表的表头
+        Node sortCurrent = sortHead; //记录排序链表的当前节点
+
+        while (current != null) {
+            while (true) {
+                if (sortCurrent.next == null) {  //末尾
+                    break;
+                }
+
+                if (current.data < sortCurrent.next.data) { //下一个节点
+                    break;
+                }
+
+                sortCurrent = sortCurrent.next;
+            }
+
+            //插入中间
+            Node temp = new Node(current.data);
+            temp.next = sortCurrent.next;
+            sortCurrent.next = temp;
+
+            //迭代
+            current = current.next;
+        }
+
+        head = sortHead.next;
     }
 
 

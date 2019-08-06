@@ -48,7 +48,7 @@ public class SingleLinkedListDemo {
 
 
         //--1-3，添加测试2
-//        singleLinkedList.addByOrder(heroNode1);
+        singleLinkedList.addByOrder(heroNode1);
 //        singleLinkedList.addByOrder(heroNode4);
 //        singleLinkedList.addByOrder(heroNode3);
 //        singleLinkedList.addByOrder(heroNode2);
