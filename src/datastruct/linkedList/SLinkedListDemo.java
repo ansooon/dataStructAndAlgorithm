@@ -1,5 +1,7 @@
 package datastruct.linkedList;
 
+import sun.security.util.Length;
+
 import java.util.List;
 
 /**
@@ -31,6 +33,7 @@ public class SLinkedListDemo {
 //        sLinkedList.addHead(4);
 //        sLinkedList.addHead(5);
 //        sLinkedList.addHead(6);
+//        sLinkedList.addHead(7);
 //        sLinkedList.printNodeData(sLinkedList.head);
 
         //方法2，获取长度
@@ -38,12 +41,12 @@ public class SLinkedListDemo {
 //        System.out.println(sLinkedList.size);
 
         //方法3-1,按顺序获取第k个节点
-//        System.out.println(sLinkedList.findNode(6).toString());
+//        System.out.println(sLinkedList.findNode(5).toString());
         //方法3-2，按倒数获取第k个节点
-//        System.out.println(sLinkedList.findLastNode(1));
+//        System.out.println(sLinkedList.findLastNode(7));
         //方法3-3，按倒数获取第k个节点
-//        System.out.println(sLinkedList.findLastNode(sLinkedList.head,2));
-        //方法3-4，按倒数获取第k个节点
+//        System.out.println(sLinkedList.findLastNode(sLinkedList.head,1));
+        //方法3-4，获取中间节点
 //        System.out.println(sLinkedList.findMiddleNode()); //123456，取4
 
         //方法6，合并有序链表
@@ -70,11 +73,16 @@ public class SLinkedListDemo {
 //        sLinkedList.printNodeData(sLinkedList.head);
 
         //方法8，判断链表是否有环
-        sLinkedList.addTail(sLinkedList.head);
-        System.out.println(sLinkedList.hasCycle());
+//        sLinkedList.addTail(sLinkedList.head);
+//        System.out.println(sLinkedList.hasCycle());
 
 
-
+        //方法9，取环状链表的长度
+//        sLinkedList.addTail(sLinkedList.findNode(2));
+//        if(sLinkedList.hasCycle()){
+//            int cycleLength = sLinkedList.getCycleLength(sLinkedList.getCycleNode());
+//            System.out.println(cycleLength);
+//        }
 
 
     }
@@ -86,7 +94,7 @@ public class SLinkedListDemo {
 
 class SLinkedList{
     public Node head;
-    public Node current;  //在多线程环境中可能会出问题
+//    public Node current;  //在多线程环境中可能会出问题
     int size;
 
 
@@ -109,6 +117,7 @@ class SLinkedList{
 
     //打印
     public void printNodeData(Node node){
+        Node current;  //在多线程环境中可能会出问题
         if (node == null){
             return;
         }
@@ -122,56 +131,47 @@ class SLinkedList{
 
     //方法1-1,向尾部添加数据(注意不是添加节点)
     public void addTail(int data){ //注意，这里既可以定义添加Node节点，也可以定义添加数据域，现实中应该是添加数据域，然后再对Node进行初始化。
-        //判断链表为空的时候
-        if (head == null){ //如果头结点为空，说明这个链表还没有创建，那就把新的结点赋给头结点
+        //首先初始化head节点
+        Node current = head;
+        if(head == null){
             head = new Node(data);
-            current = head;
-
-
+            size ++;
         }else{
-            //创建新的结点，放在当前节点的后面（把新的结点合链表进行关联）
+            while(current.next != null){
+                current = current.next;
+            }
             current.next = new Node(data);
-            //把链表的当前索引向后移动一位
-            current = current.next; //此步操作完成之后，current结点指向新添加的那个结点，即尾节点
             size ++;
         }
     }
 
     //方法1-1,向尾部添加数据(注意不是添加节点)
     public void addTail(Node node){ //注意，这里既可以定义添加Node节点，也可以定义添加数据域，现实中应该是添加数据域，然后再对Node进行初始化。
-        if (node == null){
-            return;
-        }
-        //判断链表为空的时候
-        if (head == null){ //如果头结点为空，说明这个链表还没有创建，那就把新的结点赋给头结点
+        Node current = head;
+        if(head == null){
             head = node;
-            current = head;
             size ++;
         }else{
-            //创建新的结点，放在当前节点的后面（把新的结点合链表进行关联）
+            while(current.next != null){
+                current = current.next;
+            }
+
             current.next = node;
-            //把链表的当前索引向后移动一位
-            current = current.next; //此步操作完成之后，current结点指向新添加的那个结点，即尾节点
             size ++;
         }
     }
 
     //方法1-2,向头部添加数据(注意不是添加节点)
-    public void addHead(int data){ //注意，这里既可以定义添加Node节点，也可以定义添加数据域，现实中应该是添加数据域，然后再对Node进行初始化。
+    public void addHead(int data) { //注意，这里既可以定义添加Node节点，也可以定义添加数据域，现实中应该是添加数据域，然后再对Node进行初始化。
+        Node current = new Node(data);
         //判断链表为空的时候
-        if (head == null){ //如果头结点为空，说明这个链表还没有创建，那就把新的结点赋给头结点
+        if (head == null) { //如果头结点为空，说明这个链表还没有创建，那就把新的结点赋给头结点
             head = new Node(data);
-            current = head;
-            size ++;
+            size++;
         }else{
-            current = new Node(data);
-            //将新节点关联下一个节点(此处为头节点，和带头节点的链表不太一样)
             current.next = head;
-            //将头节点关联新节点
-            head = current; //此步操作完成之后，current结点指向新添加的那个结点，即尾节点
-            //相同点，都遵循从右到左（从当前新节点开始）,先完成当前新节点的指向，再完成前节点的指向
-            //不同点，无头节点的链表的head即指向第一个节点，它伴随着第一个数据实体的初始化而初始化
-            size ++;
+            head = current;
+            size++;
         }
     }
 
@@ -185,9 +185,8 @@ class SLinkedList{
         if(head == null){
             return 0;
         }
-
         int size = 0;
-        current = head;
+        Node current = head;
         while (current != null){
             size ++;
             current = current.next;
@@ -206,7 +205,7 @@ class SLinkedList{
             System.out.println("index out of bound");
         }
 
-        current = head;
+        Node current = head;
         for (int i = 0; i < index - 1 ; i++) {
             current = current.next;
         }
@@ -218,7 +217,7 @@ class SLinkedList{
         return findNode((size + 1) - index);
     }
 
-    //方法3-3，查找顺数第k个链表的数据,不遍历链表获取链表长度
+    //方法3-3，查找倒数第k个链表的数据,不遍历链表获取链表长度
     public Node findLastNode(Node node, int index){
         if (index == 0 || head == null){
             return null;
@@ -287,6 +286,7 @@ class SLinkedList{
             head = head1;
         }
 
+        Node current;
         // 一开始，让current结点指向head1和head2中较小的数据，得到head结点
         if (head1.data < head2.data){
             head = head1;
@@ -342,7 +342,7 @@ class SLinkedList{
         head = reverseHead;
     }
 
-    //判断链表是否有环
+    //方法8，判断链表是否有环
     public boolean hasCycle(){
         if (head == null){
             return false;
@@ -363,6 +363,44 @@ class SLinkedList{
         }
 
         return false;
+    }
+
+    //方法9，取出有环链表中，环的长度。思路：需要先利用上面的第7小节中的hasCycle方法（判断链表是否有环的那个方法），这个方法的返回值是boolean型，但是现在要把这个方法稍做修改，让其返回值为相遇的那个结点。然后，我们拿到这个相遇的结点就好办了，这个结点肯定是在环里嘛，我们可以让这个结点对应的指针一直往下走，直到它回到原点，就可以算出环的长度了。
+    public Node getCycleNode(){
+        if (head == null){
+            return null;
+        }
+
+        Node first = head;
+        Node second = head;
+
+        while (second != null && second.next != null){  //循环到链尾second != null，此时second.next = null.也即循环体中的second一定不为null.second.next != null,针对最后循环时当前节点在末尾上
+//        while (second != null){  //循环到链尾second != null，此时second.next = null.也即循环体中的second一定不为null.second.next != null,针对最后循环时当前节点在末尾上
+
+            first = first.next;
+            second = second.next.next;
+
+            if (first == second){
+                return first;
+            }
+        }
+        return null;
+    }
+
+    public int getCycleLength(Node node) {
+        if (head == null){
+            return 0;
+        }
+
+        Node current = node;
+        int cycleLength = 0;
+        while (true){  //默认有环
+            current = current.next;
+            cycleLength ++;
+            if(current == node){
+                return cycleLength;
+            }
+        }
     }
 
 }
