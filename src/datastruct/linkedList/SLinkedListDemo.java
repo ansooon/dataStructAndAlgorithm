@@ -3,6 +3,8 @@ package datastruct.linkedList;
 
 import java.util.Stack;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Node;
+
 /**
  * @author zhongshanhuang
  * @company caih
@@ -47,6 +49,15 @@ public class SLinkedListDemo {
 //        System.out.println(sLinkedList.findLastNode(sLinkedList.head,1));
         //方法3-4，获取中间节点
 //        System.out.println(sLinkedList.findMiddleNode()); //123456，取4
+
+        //方法4，删除
+//        sLinkedList.remove(7);
+//        sLinkedList.printNodeData();
+
+        //方法5，修改
+//        sLinkedList.update(8, new SLinkedList().new Node(100));
+//        sLinkedList.printNodeData();
+
 
         //方法6，合并有序链表
 //        SLinkedList sLinkedList1 = new SLinkedList();
@@ -331,7 +342,53 @@ class SLinkedList{
 
 
     //方法4，删除
-    //方法5，查询
+    public void remove(int index){
+        if(head == null){
+            return;
+        }
+
+        if (index <= 0 || index > size){
+            System.out.println("index out of bound");
+        }
+
+        Node current = head;
+        if(index == 1){
+            head = head.next; //头节点比较特殊，删头节点需要移动头节点
+            size--;
+        }else{
+            for (int i = 0; i < index -2; i++) { //注意是减2
+                current = current.next;
+            }
+            current.next = current.next.next;
+            size--;
+        }
+        
+    }
+    
+    //方法5，修改
+    public void update(int index, Node node){
+        if(node == null){
+            return;
+        }
+
+        if (index <= 0 || index > size){
+            System.out.println("index out of bound");
+        }
+        Node current = head;
+        if(index == 1){
+            node.next = head.next; //结论1，方式设计新节点，都要先为新节点的指针赋值。（从右到左原则）
+            head = node;
+        }else{
+            for (int i = 0; i < index -2; i++) { //注意是减2
+                current = current.next;
+            }
+            node.next = current.next.next;
+            current.next = node;
+        }
+    }
+
+
+
     //方法6，合并两个有序链表，市值仍然有序
     //解题思路：挨着比较链表1和链表2。这个类似于归并排序。尤其要注意两个链表都为空、和其中一个为空的情况。只需要O (1) 的空间。时间复杂度为O (max(len1,len2))
     public void mergeLinkedList(SLinkedList sLinkedList1, SLinkedList sLinkedList2){ //添加到本数据对象中，因此不需要new一个新的进来。此处入口也可以做成传入List
@@ -542,24 +599,24 @@ class SLinkedList{
 
     //方法11-2：判断两个单链表相交的第一个交点（使用两个栈）
     public Node getFirstCommonNodeByStack(SLinkedList sLinkedList1, SLinkedList sLinkedList2) {
-        Node curent1 =  sLinkedList1.head;
-        Node curent2 =  sLinkedList2.head;
+        Node current1 =  sLinkedList1.head;
+        Node current2 =  sLinkedList2.head;
 
-        if(curent1 == null || curent2 == null){
+        if(current1 == null || current2 == null){
             return null;
         }
         Stack<Node> stack1 = new Stack<>();
         Stack<Node> stack2 = new Stack<>();
 
         //将数据压入栈中
-        while (curent1 != null) {
-            stack1.push(curent1);
-            curent1 = curent1.next;
+        while (current1 != null) {
+            stack1.push(current1);
+            current1 = current1.next;
         }
 
-        while (curent2 != null) {
-            stack2.push(curent2);
-            curent2 = curent2.next;
+        while (current2 != null) {
+            stack2.push(current2);
+            current2 = current2.next;
         }
 
         //获得第一个不同节点的下一个节点，即为第一个相同节点

@@ -61,12 +61,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1452" />
+          <entry key="java" value="2035" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1452" />
+          <entry key="JAVA" value="2035" />
         </counts>
       </usages-collector>
     </session>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="571" column="54" selection-start-line="571" selection-start-column="54" selection-end-line="571" selection-end-column="54" />
+            <state relative-caret-position="-456">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#6551#6552#0" expanded="true" />
                 <element signature="e#6602#6603#0" expanded="true" />
@@ -98,6 +98,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>HeroNode</find>
+      <find>curent</find>
     </findStrings>
     <replaceStrings>
       <replace>DoubleHeroNode</replace>
@@ -179,7 +180,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565088668454" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565089965228" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -313,18 +314,18 @@
       <workItem from="1564894131181" duration="14240000" />
       <workItem from="1564974821967" duration="10603000" />
       <workItem from="1565063999747" duration="2800000" />
-      <workItem from="1565070675166" duration="7098000" />
+      <workItem from="1565070675166" duration="8364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82210000" />
+    <option name="totallyTimeSpent" value="83476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24785867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15256959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -333,7 +334,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25086308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22094361" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24971232" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,7 +378,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java</url>
-          <line>420</line>
+          <line>396</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -432,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="571" column="54" selection-start-line="571" selection-start-column="54" selection-end-line="571" selection-end-column="54" />
+        <state relative-caret-position="-456">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#6551#6552#0" expanded="true" />
             <element signature="e#6602#6603#0" expanded="true" />
