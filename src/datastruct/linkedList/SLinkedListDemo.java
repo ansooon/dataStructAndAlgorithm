@@ -1,6 +1,8 @@
 package datastruct.linkedList;
 
 
+import java.util.Stack;
+
 /**
  * @author zhongshanhuang
  * @company caih
@@ -90,29 +92,55 @@ public class SLinkedListDemo {
 //            System.out.println(cycleStartNode);
 //        }
 
-        //方法11，判断两个单链表相交的第一个交点
-        SLinkedList sLinkedList1 = new SLinkedList();
-        SLinkedList sLinkedList2 = new SLinkedList();
-        SLinkedList sLinkedList3 = new SLinkedList();
-        sLinkedList1.addTail(1);
-        sLinkedList1.addTail(2);
-        sLinkedList1.addTail(3);
-        sLinkedList1.addTail(4);
-        sLinkedList1.addTail(5);
-        sLinkedList1.addTail(6);
-        sLinkedList1.addTail(7);
-        sLinkedList1.addTail(8);
-        sLinkedList1.addTail(9);
-        sLinkedList1.printNodeData();
-        System.out.println();
+        //方法11-1，判断两个单链表相交的第一个交点
+//        SLinkedList sLinkedList1 = new SLinkedList();
+//        SLinkedList sLinkedList2 = new SLinkedList();
+//        SLinkedList sLinkedList3 = new SLinkedList();
+//        sLinkedList1.addTail(1);
+//        sLinkedList1.addTail(2);
+//        sLinkedList1.addTail(3);
+//        sLinkedList1.addTail(4);
+//        sLinkedList1.addTail(5);
+//        sLinkedList1.addTail(6);
+//        sLinkedList1.addTail(7);
+//        sLinkedList1.addTail(8);
+//        sLinkedList1.addTail(9);
+//        sLinkedList1.printNodeData();
+//        System.out.println();
+//
+//        sLinkedList2.addTail(3);
+//        sLinkedList2.addTail(4);
+//        sLinkedList2.addTail(5);
+//        sLinkedList2.addTail(sLinkedList1.findNode(6));
+//        sLinkedList2.printNodeData();
+//        SLinkedList.Node  firstCommonNode = sLinkedList3.getFirstCommonNode(sLinkedList1, sLinkedList2);
+//        System.out.println(firstCommonNode);
 
-        sLinkedList2.addTail(3);
-        sLinkedList2.addTail(4);
-        sLinkedList2.addTail(5);
-        sLinkedList2.addTail(sLinkedList1.findNode(6));
-        sLinkedList2.printNodeData();
-        SLinkedList.Node  firstCommonNode = sLinkedList3.getFirstCommonNode(sLinkedList1, sLinkedList2);
-        System.out.println(firstCommonNode);
+        //方法11-2，判断两个单链表相交的第一个交点
+//        SLinkedList sLinkedList1 = new SLinkedList();
+//        SLinkedList sLinkedList2 = new SLinkedList();
+//        SLinkedList sLinkedList3 = new SLinkedList();
+//        sLinkedList1.addTail(1);
+//        sLinkedList1.addTail(2);
+//        sLinkedList1.addTail(3);
+//        sLinkedList1.addTail(4);
+//        sLinkedList1.addTail(5);
+//        sLinkedList1.addTail(6);
+//        sLinkedList1.addTail(7);
+//        sLinkedList1.addTail(8);
+//        sLinkedList1.addTail(9);
+//        sLinkedList1.printNodeData();
+//        System.out.println();
+//
+//        sLinkedList2.addTail(3);
+//        sLinkedList2.addTail(4);
+//        sLinkedList2.addTail(5);
+//        sLinkedList2.addTail(sLinkedList1.findNode(6));
+//        sLinkedList2.printNodeData();
+//        SLinkedList.Node  firstCommonNode = sLinkedList3.getFirstCommonNodeByStack(sLinkedList1, sLinkedList2);
+//        System.out.println(firstCommonNode);
+
+
     }
 
 
@@ -466,12 +494,12 @@ class SLinkedList{
         return null;
     }
 
-    //方法11：判断两个单链表相交的第一个交点
+    //方法11-1：判断两个单链表相交的第一个交点
     public Node getFirstCommonNode(SLinkedList sLinkedList1, SLinkedList sLinkedList2) {
         Node head1 =  sLinkedList1.head;
         Node head2 =  sLinkedList2.head;
 
-        if(head1 == null || head1 == null){
+        if(head1 == null || head2 == null){
             return null;
         }
 
@@ -510,5 +538,43 @@ class SLinkedList{
 
         return null;
     }
+
+
+    //方法11-2：判断两个单链表相交的第一个交点（使用两个栈）
+    public Node getFirstCommonNodeByStack(SLinkedList sLinkedList1, SLinkedList sLinkedList2) {
+        Node curent1 =  sLinkedList1.head;
+        Node curent2 =  sLinkedList2.head;
+
+        if(curent1 == null || curent2 == null){
+            return null;
+        }
+        Stack<Node> stack1 = new Stack<>();
+        Stack<Node> stack2 = new Stack<>();
+
+        //将数据压入栈中
+        while (curent1 != null) {
+            stack1.push(curent1);
+            curent1 = curent1.next;
+        }
+
+        while (curent2 != null) {
+            stack2.push(curent2);
+            curent2 = curent2.next;
+        }
+
+        //获得第一个不同节点的下一个节点，即为第一个相同节点
+        Node temp1;
+        Node temp2;
+        while(stack1.size() > 0 && stack2.size() > 0){
+            temp1 = stack1.pop();
+            temp2 = stack2.pop();
+            if(temp1 != temp2){
+                return temp1.next; //巧妙利用链表结构，当前节点的下一个
+            }
+        }
+        return null;
+    }
+
+
 
 }
