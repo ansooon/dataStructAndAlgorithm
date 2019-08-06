@@ -1,6 +1,7 @@
 package datastruct.linkedList;
 
 
+import java.util.Hashtable;
 import java.util.Stack;
 
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Node;
@@ -17,13 +18,16 @@ public class SLinkedListDemo {
 
         SLinkedList sLinkedList = new SLinkedList();
 
+
         //方法1-1，尾部添加
         sLinkedList.addTail(1);
         sLinkedList.addTail(2);
         sLinkedList.addTail(3);
         sLinkedList.addTail(4);
         sLinkedList.addTail(5);
-        sLinkedList.addTail(6);
+        sLinkedList.addTail(8);
+        sLinkedList.addTail(7);
+        sLinkedList.addTail(7);
         sLinkedList.addTail(7);
 //        sLinkedList.printNodeData(sLinkedList.head);
 
@@ -37,26 +41,32 @@ public class SLinkedListDemo {
 //        sLinkedList.addHead(7);
 //        sLinkedList.printNodeData(sLinkedList.head);
 
-        //方法2，获取长度
-//        System.out.println(sLinkedList.getLength());
-//        System.out.println(sLinkedList.size);
 
-        //方法3-1,按顺序获取第k个节点
-//        System.out.println(sLinkedList.findNode(5).toString());
-        //方法3-2，按倒数获取第k个节点
-//        System.out.println(sLinkedList.findLastNode(7));
-        //方法3-3，按倒数获取第k个节点
-//        System.out.println(sLinkedList.findLastNode(sLinkedList.head,1));
-        //方法3-4，获取中间节点
-//        System.out.println(sLinkedList.findMiddleNode()); //123456，取4
-
-        //方法4，删除
+        //方法2-1，删除
 //        sLinkedList.remove(7);
 //        sLinkedList.printNodeData();
 
-        //方法5，修改
+        //方法2-2，在不在不知道头结点的情况下删除指定结点：
+//        sLinkedList.removeSpecialNode(sLinkedList.findNode(2));
+//        sLinkedList.printNodeData();
+
+        //方法3，修改
 //        sLinkedList.update(8, new SLinkedList().new Node(100));
 //        sLinkedList.printNodeData();
+
+
+        //方法4-1,按顺序获取第k个节点
+//        System.out.println(sLinkedList.findNode(5).toString());
+        //方法4-2，按倒数获取第k个节点
+//        System.out.println(sLinkedList.findLastNode(7));
+        //方法4-3，按倒数获取第k个节点
+//        System.out.println(sLinkedList.findLastNode(sLinkedList.head,1));
+        //方法4-4，获取中间节点
+//        System.out.println(sLinkedList.findMiddleNode()); //123456，取4
+
+        //方法5，获取长度
+//        System.out.println(sLinkedList.getLength());
+//        System.out.println(sLinkedList.size);
 
 
         //方法6，合并有序链表
@@ -150,6 +160,15 @@ public class SLinkedListDemo {
 //        sLinkedList2.printNodeData();
 //        SLinkedList.Node  firstCommonNode = sLinkedList3.getFirstCommonNodeByStack(sLinkedList1, sLinkedList2);
 //        System.out.println(firstCommonNode);
+
+        //方法12，排序
+//        sLinkedList.sortByData();
+//        sLinkedList.sortByNode();
+//        sLinkedList.printNodeData();
+
+        //方法13，去重
+//        sLinkedList.distinctLink();
+//        sLinkedList.printNodeData();
 
 
     }
@@ -255,22 +274,80 @@ class SLinkedList{
 //    为了方便添加和遍历的操作，在LinkList类中添加一个成员变量current，用来表示当前节点的索引（03行）。
 //    这里面的遍历链表的方法（20行）中，参数node表示从node节点开始遍历，不一定要从head节点遍历。
 
-    //方法2：获取单链表的长度
-    public int getLength(){
+
+    //方法2-1，删除
+    public void remove(int index){
         if(head == null){
-            return 0;
-        }
-        int size = 0;
-        Node current = head;
-        while (current != null){
-            size ++;
-            current = current.next;
+            return;
         }
 
-        return size;
+        if (index <= 0 || index > size){
+            System.out.println("index out of bound");
+        }
+
+        Node current = head;
+        if(index == 1){
+            head = head.next; //头节点比较特殊，删头节点需要移动头节点
+            size--;
+        }else{
+            for (int i = 0; i < index -2; i++) { //注意是减2
+                current = current.next;
+            }
+            current.next = current.next.next;
+            size--;
+        }
+
     }
 
-    //方法3-1，查找顺数第k个链表的数据
+
+    /**方法2-2
+     * 在不知道头结点的情况下删除指定结点：
+     * 删除结点的重点在于找出其前结点，使其前结点的指针指向其后结点，即跳过待删除结点
+     * 1、如果待删除的结点是尾结点，由于单链表不知道其前结点，没有办法删除
+     * 2、如果删除的结点不是尾结点，则将其该结点的值与下一结点交换，然后该结点的指针指向下一结点的后续结点
+     * 要删2
+     * 1234
+     * 1324
+     * 134
+     */
+    public boolean removeSpecialNode(Node node){
+        if(node.next == null){
+            return false;
+        }else{
+            //交换结点和其后续结点中的数据
+            int temp = node.data;
+            node.data = node.next.data;
+            node.next.data = temp;
+            //删除后续结点
+            node.next = node.next.next;
+            return true;
+        }
+    }
+
+    //方法3，修改
+    public void update(int index, Node node){
+        if(node == null){
+            return;
+        }
+
+        if (index <= 0 || index > size){
+            System.out.println("index out of bound");
+        }
+        Node current = head;
+        if(index == 1){
+            node.next = head.next; //结论1，方式设计新节点，都要先为新节点的指针赋值。（从右到左原则）
+            head = node;
+        }else{
+            for (int i = 0; i < index -2; i++) { //注意是减2
+                current = current.next;
+            }
+            node.next = current.next.next;
+            current.next = node;
+        }
+    }
+
+
+    //方法4-1，查找顺数第k个链表的数据
     public Node findNode(int index){
         if (head == null){
             return null;
@@ -287,12 +364,12 @@ class SLinkedList{
 
         return current;
     }
-    //方法3-2，查找顺数第k个链表的数据
+    //方法4-2，查找顺数第k个链表的数据
     public Node findLastNode(int index){
         return findNode((size + 1) - index);
     }
 
-    //方法3-3，查找倒数第k个链表的数据,不遍历链表获取链表长度
+    //方法4-3，查找倒数第k个链表的数据,不遍历链表获取链表长度
     public Node findLastNode(Node node, int index){
         if (index == 0 || head == null){
             return null;
@@ -321,7 +398,7 @@ class SLinkedList{
     }
 
 
-    //方法3-4，查找中间节点，不遍历链表
+    //方法4-4，查找中间节点，不遍历链表
     public Node findMiddleNode(){
         if ( head == null){
             return null;
@@ -341,52 +418,20 @@ class SLinkedList{
     }
 
 
-    //方法4，删除
-    public void remove(int index){
+    //方法5：获取单链表的长度
+    public int getLength(){
         if(head == null){
-            return;
+            return 0;
         }
-
-        if (index <= 0 || index > size){
-            System.out.println("index out of bound");
-        }
-
+        int size = 0;
         Node current = head;
-        if(index == 1){
-            head = head.next; //头节点比较特殊，删头节点需要移动头节点
-            size--;
-        }else{
-            for (int i = 0; i < index -2; i++) { //注意是减2
-                current = current.next;
-            }
-            current.next = current.next.next;
-            size--;
-        }
-        
-    }
-    
-    //方法5，修改
-    public void update(int index, Node node){
-        if(node == null){
-            return;
+        while (current != null){
+            size ++;
+            current = current.next;
         }
 
-        if (index <= 0 || index > size){
-            System.out.println("index out of bound");
-        }
-        Node current = head;
-        if(index == 1){
-            node.next = head.next; //结论1，方式设计新节点，都要先为新节点的指针赋值。（从右到左原则）
-            head = node;
-        }else{
-            for (int i = 0; i < index -2; i++) { //注意是减2
-                current = current.next;
-            }
-            node.next = current.next.next;
-            current.next = node;
-        }
+        return size;
     }
-
 
 
     //方法6，合并两个有序链表，市值仍然有序
@@ -440,7 +485,7 @@ class SLinkedList{
         }
     }
 
-    //方法7，单链表的反转：【出现频率最高】，思路：从头到尾遍历原链表，每遍历一个结点，将其摘下放在新链表的最前端。注意链表为空和只有一个结点的情况。时间复杂度为O（n）
+    //方法7，单链表的反转。在反转指针钱一定要保存下个结点的指针。【出现频率最高】，思路：从头到尾遍历原链表，每遍历一个结点，将其摘下放在新链表的最前端。注意链表为空和只有一个结点的情况。时间复杂度为O（n）
     public void reverseLinkedList(){
         if(head == null || head.next == null){
             return;
@@ -632,6 +677,136 @@ class SLinkedList{
         return null;
     }
 
+
+    //对链表进行排序
+/*    public void sort(){
+        if(head == null || head.next == null){
+            return;
+        }
+
+        Node current = head;
+        Node sortHead = null;  //记录排序链表的表头
+        Node sortCurrent = null; //记录排序链表的当前节点
+        int count = 0;
+
+        while (current != null){
+            if(sortHead == null) {  //初始化第一个
+                sortHead = head;
+                sortCurrent = sortHead;
+                count++;
+            }else if(count == 1){  // //初始化第二个
+                if(current.data > sortCurrent.data){
+                    sortHead.next = current;
+                    sortCurrent = sortHead.next;
+                }else{
+                    current.next = sortHead;
+                    sortHead = current;
+                    sortCurrent = sortHead.next;
+                }
+                count++;
+            } else{
+                while (true){
+                    if(sortCurrent.next == null){  //末尾
+                        break;
+                    }
+
+                    if(current.data > sortCurrent.next.data){ //下一个节点
+                        break;
+                    }
+
+                    sortCurrent = sortCurrent.next;
+                }
+
+                current.next = sortCurrent.next;
+                sortCurrent.next = current;
+            }
+
+            current = current.next;
+        }
+
+        head = sortHead;
+    }*/
+
+
+    //方法12，值排序（注意交换的是值）
+    public void sortByData(){
+        if(head == null || head.next == null){
+            return;
+        }
+        int temp;
+        Node next;
+        Node cur = head;
+
+        while (cur.next != null){
+            next = cur.next;
+            while (next != null){
+                if(cur.data > next.data){
+                    temp = cur.data;       //腾笼
+                    cur.data = next.data;  //笼换鸟
+                    next.data = temp;
+                }
+                next = next.next;
+            }
+            cur = cur.next;
+        }
+    }
+
+    public void sortByNode() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node pre = head;
+        //当前待排序的节点
+        Node cur = head.next;
+        //辅助节点，永远指向头结点
+        Node helper = new Node(0);
+        helper.next = head;
+        while (cur != null) {
+            if (cur.data < pre.data) {
+                //先把cur节点从当前链表中删除，然后再把cur节点插入到合适位置
+                pre.next = cur.next;
+                //从前往后找到node2.val>cur.val,然后把cur节点插入到node1和node2之间
+                Node node1 = helper;
+                Node node2 = helper.next;
+                while (cur.data > node2.data) {
+                    node1 = node2;
+                    node2 = node2.next;
+                }
+                //把cur节点插入到node1和node2之间
+                node1.next = cur;
+                cur.next = node2;
+                //cur节点向后移动一位
+                cur = pre.next;
+
+            } else {
+                //向后移动
+                pre = cur;
+                cur = cur.next;
+            }
+        }
+        head = helper.next;
+    }
+
+
+        /**方法13
+         * 去掉重复元素:
+         * 需要额外的存储空间hashtable，调用hashtable.containsKey()来判断重复结点
+         */
+        public void distinctLink(){
+            Node temp = head;
+            Node pre = null;
+            Hashtable<Integer, Integer> hb = new Hashtable<Integer, Integer>();
+            while(temp != null){
+                if(hb.containsKey(temp.data)){//如果hashtable中已存在该结点，则跳过该结点
+                    pre.next = temp.next;
+                }else{//如果hashtable中不存在该结点，将结点存到hashtable中
+                    hb.put(temp.data, 1);
+                    pre=temp;
+                }
+                temp = temp.next;
+            }
+        }
 
 
 }
