@@ -2,6 +2,7 @@ package datastruct.queue;
 
 
 import java.lang.reflect.GenericArrayType;
+import java.util.Stack;
 
 /**
  * @author zhongshanhuang
@@ -11,7 +12,7 @@ import java.lang.reflect.GenericArrayType;
  */
 
 
-public class ArrayQueueDemo {
+public class ArrayAndSlinkedListAndStackQueueDemo {
 
     public static void main(String[] args) {
 //        ArrayQueue arrayQueue = new ArrayQueue(5);
@@ -53,15 +54,15 @@ public class ArrayQueueDemo {
          *                链表实现
          */
 
-        SLinkQueue sLinkQueue = new SLinkQueue(5);
+//        SLinkQueue sLinkQueue = new SLinkQueue(5);
 
         //方法1，添加
-        sLinkQueue.addQueue(1);
-        sLinkQueue.addQueue(2);
-        sLinkQueue.addQueue(3);
-        sLinkQueue.addQueue(4);
-        sLinkQueue.addQueue(5);
-        sLinkQueue.showQueue();
+//        sLinkQueue.addQueue(1);
+//        sLinkQueue.addQueue(2);
+//        sLinkQueue.addQueue(3);
+//        sLinkQueue.addQueue(4);
+//        sLinkQueue.addQueue(5);
+//        sLinkQueue.showQueue();
 //
 //        //方法2，获取
 //        System.out.println("获取队列");
@@ -95,7 +96,25 @@ public class ArrayQueueDemo {
 //        sLinkQueue.showQueue();
 
 
+        /**************************************************
+         *                双栈实现
+         */
 
+        StackQueue<Integer> stackQueue = new StackQueue<>();
+        //1，添加
+        stackQueue.addQueue(1);
+        stackQueue.addQueue(2);
+        stackQueue.addQueue(3);
+//        stackQueue.showQueue();
+
+        //2，获取
+        System.out.println("取数");
+        System.out.println(stackQueue.getQueue());
+        System.out.println(stackQueue.getQueue());
+        System.out.println(stackQueue.getQueue());
+        System.out.println(stackQueue.getQueue());
+//        System.out.println("取数后展示");
+//        stackQueue.showQueue();
 
     }
 }
@@ -396,6 +415,42 @@ class SLinkedList{
     public boolean isEmpty(){
         return head == null;
     }
+}
 
+
+
+
+class StackQueue<E>{
+    private Stack<E> stackAdd  = new Stack<>();
+    private Stack<E> stackGet  = new Stack<>();
+
+    //1，存操作。没有满判断，也暂时无法展示所有队列节点信息
+     public synchronized void addQueue(E data){
+        stackAdd.push(data);
+    }
+
+    //2，取操作
+    public synchronized E getQueue() {
+
+        if (isEmpty()) {
+//            throw new RuntimeException("队列为空");
+            System.out.println("队列为空");
+            return  null;
+        }
+
+        if (stackGet.isEmpty()) {  //如果只有一个if，那么不加else也可以
+            while (!stackAdd.isEmpty()){
+                stackGet.push(stackAdd.pop());
+            }
+        }
+
+        return stackGet.pop();
+    }
+
+
+    //3判断为空
+    public synchronized boolean isEmpty(){
+        return stackAdd.isEmpty() && stackGet.isEmpty();
+    }
 
 }

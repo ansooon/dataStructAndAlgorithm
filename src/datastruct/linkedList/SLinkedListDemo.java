@@ -20,10 +20,10 @@ public class SLinkedListDemo {
 
 
         //方法1-1，尾部添加
-        sLinkedList.addTail(1);
-        sLinkedList.addTail(3);
-        sLinkedList.addTail(2);
-        sLinkedList.addTail(1);
+//        sLinkedList.addTail(1);
+//        sLinkedList.addTail(3);
+//        sLinkedList.addTail(2);
+//        sLinkedList.addTail(1);
 //        sLinkedList.addTail(4);
 //        sLinkedList.addTail(5);
 //        sLinkedList.addTail(8);
@@ -33,14 +33,14 @@ public class SLinkedListDemo {
 //        sLinkedList.printNodeData(sLinkedList.head);
 
         //方法1-2，头部添加
-//        sLinkedList.addHead(1);
-//        sLinkedList.addHead(2);
-//        sLinkedList.addHead(3);
-//        sLinkedList.addHead(4);
-//        sLinkedList.addHead(5);
-//        sLinkedList.addHead(6);
-//        sLinkedList.addHead(7);
-//        sLinkedList.printNodeData(sLinkedList.head);
+        sLinkedList.addHead(1);
+        sLinkedList.addHead(2);
+        sLinkedList.addHead(3);
+        sLinkedList.addHead(4);
+        sLinkedList.addHead(5);
+        sLinkedList.addHead(6);
+        sLinkedList.addHead(7);
+        sLinkedList.printNodeData(sLinkedList.head);
 
 
         //方法2-1，删除
@@ -57,7 +57,7 @@ public class SLinkedListDemo {
 
 
         //方法4-1,按顺序获取第k个节点
-        System.out.println(sLinkedList.findNode(3).toString());
+//        System.out.println(sLinkedList.findNode(3).toString());
         //方法4-2，按倒数获取第k个节点
 //        System.out.println(sLinkedList.findLastNode(7));
         //方法4-3，按倒数获取第k个节点
@@ -263,7 +263,7 @@ class SLinkedList{
 
     //方法1-2,向头部添加数据(注意不是添加节点)
     public void addHead(int data) { //注意，这里既可以定义添加Node节点，也可以定义添加数据域，现实中应该是添加数据域，然后再对Node进行初始化。
-        Node current = new Node(data);
+/*        Node current = new Node(data);
         //判断链表为空的时候
         if (head == null) { //如果头结点为空，说明这个链表还没有创建，那就把新的结点赋给头结点
             head = new Node(data);
@@ -272,7 +272,13 @@ class SLinkedList{
             current.next = head;
             head = current;
             size++;
-        }
+        }*/
+
+        Node current = new Node(data);
+        current.next = head;
+        head = current;
+        size ++;
+
     }
 
 //    上方代码中，这里面的Node节点采用的是内部类来表示（33行）。使用内部类的最大好处是可以和外部类进行私有操作的互相访问。

@@ -12,17 +12,32 @@ public class CircleArrayQueueDemo {
 
     public static void main(String[] args) {
 
-        CircleArrayQueue circleArrayQueue = new CircleArrayQueue(1 + 3);
+        CircleArrayQueue circleArrayQueue = new CircleArrayQueue(1 + 5);
 
         circleArrayQueue.addQueue(1);
         circleArrayQueue.addQueue(2);
         circleArrayQueue.addQueue(3);
+        circleArrayQueue.addQueue(4);
+        circleArrayQueue.addQueue(5);
         circleArrayQueue.showQueue();
 
-        System.out.println(circleArrayQueue.getHeadQueue());
+//        System.out.println(circleArrayQueue.getHeadQueue());
 
+
+        System.out.println("取节点");
         System.out.println(circleArrayQueue.getQueue());
+        System.out.println(circleArrayQueue.getQueue());
+        System.out.println(circleArrayQueue.getQueue());
+        System.out.println("取节点后打印节点");
         circleArrayQueue.showQueue();
+
+
+        circleArrayQueue.addQueue(6);
+        circleArrayQueue.addQueue(7);
+        circleArrayQueue.addQueue(8);
+        System.out.println("添加节点后展示节点");
+        circleArrayQueue.showQueue();
+
     }
 }
 
@@ -50,7 +65,7 @@ class CircleArrayQueue {
      * 1,判断是否满
      * @return
      */
-    public boolean isFull(){
+    public boolean isFull(){  //因为front在取值时其值被循环，故而其值不会很大。但是因为rear在添加时，先做满判断，因此其值在判断满环节中没有被循环
         return (rear + 1) % maxSize == front;
     }
 
@@ -109,7 +124,8 @@ class CircleArrayQueue {
         }
 
         //思路：从front开始遍历，遍历多少个元素
-        for (int i = front; i < front + getSize(); i++) {
+        int nums = getSize();
+        for (int i = front; i < front + nums; i++) {
             System.out.println(arr[i % maxSize]);  //注意哈，变量一定要循环
         }
     }
@@ -119,7 +135,7 @@ class CircleArrayQueue {
      * @return
      */
     public int getSize(){
-        return (rear + maxSize - front) % maxSize;
+        return (rear + maxSize - front) % maxSize;  //貌似不需要循环取模了，因为所有的操作变量都取模过了
     }
 
     public int getHeadQueue(){
