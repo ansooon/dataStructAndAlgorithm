@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409302d0-9a45-4571-b541-e1dc45ec38ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedListDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueueDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastruct/queue/ArrayLoopQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,51 +62,36 @@
     <session id="1311927934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3406" />
+          <entry key="java" value="7043" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3406" />
+          <entry key="JAVA" value="7043" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="738" column="13" lean-forward="true" selection-start-line="738" selection-start-column="13" selection-end-line="738" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5917#5918#0" expanded="true" />
-                <element signature="e#5957#5958#0" expanded="true" />
-                <element signature="e#10512#10513#0" expanded="true" />
-                <element signature="e#10563#10564#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,6 +129,9 @@
         <option value="$PROJECT_DIR$/src/datastruct/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayLoopQueueDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java" />
       </list>
     </option>
   </component>
@@ -146,7 +141,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="312" />
     <option name="y" value="-939" />
     <option name="width" value="1558" />
@@ -158,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,45 +161,18 @@
               <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleLinkedListDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565102950200" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565175618757" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,39 +201,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SLinkedListDemo">
+  <component name="RunManager" selected="Application.ArrayQueueDemo">
+    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.queue.ArrayQueueDemo" />
+      <module name="datastructAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastruct.queue.CircleArrayQueueDemo" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircleArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.queue.CircleArrayQueueDemo" />
+      <module name="datastructAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastruct.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastruct.DLinkedList" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastruct.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoubleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.linkedList.DoubleLinkedListDemo" />
-      <module name="datastructAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastruct.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Josepfu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.linkedList.Josepfu" />
-      <module name="datastructAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastruct.queue.*" />
+          <option name="PATTERN" value="datastruct.queue.CircleArrayQueueDemo" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -290,7 +259,7 @@
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastruct.queue.*" />
+          <option name="PATTERN" value="datastruct.queue.CircleArrayQueueDemo" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -300,18 +269,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.SingleLinkedListDemo" />
-      <item itemvalue="Application.DoubleLinkedListDemo" />
-      <item itemvalue="Application.Josepfu" />
       <item itemvalue="Application.DLinkedList" />
       <item itemvalue="Application.SLinkedListDemo" />
+      <item itemvalue="Application.ArrayQueueDemo" />
+      <item itemvalue="Application.CircleArrayQueueDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayQueueDemo" />
+        <item itemvalue="Application.CircleArrayQueueDemo" />
         <item itemvalue="Application.SLinkedListDemo" />
         <item itemvalue="Application.SingleLinkedListDemo" />
         <item itemvalue="Application.DLinkedList" />
-        <item itemvalue="Application.Josepfu" />
-        <item itemvalue="Application.DoubleLinkedListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -337,17 +306,18 @@
       <workItem from="1564894131181" duration="14240000" />
       <workItem from="1564974821967" duration="10603000" />
       <workItem from="1565063999747" duration="2800000" />
-      <workItem from="1565070675166" duration="18140000" />
+      <workItem from="1565070675166" duration="20026000" />
+      <workItem from="1565164071205" duration="10219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93252000" />
+    <option name="totallyTimeSpent" value="105357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17558886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22858672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,8 +326,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17721519" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45684695" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25776756" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4510932" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -400,42 +370,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java</url>
-          <line>446</line>
+          <line>457</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java</url>
-          <line>707</line>
+          <line>718</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="sortCurrent.next" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/datastruct/HelloWorld.java" />
     <entry file="file://$PROJECT_DIR$/src/datastruct/ArrayQueueLoopDemo.java" />
     <entry file="jar://$PROJECT_DIR$/../../JavaJDK/Java1.8/src.zip!/java/util/Stack.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayLoopQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/DLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -466,14 +423,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="738" column="13" lean-forward="true" selection-start-line="738" selection-start-column="13" selection-end-line="738" selection-end-column="13" />
+        <state relative-caret-position="652">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-            <element signature="e#5957#5958#0" expanded="true" />
-            <element signature="e#10512#10513#0" expanded="true" />
-            <element signature="e#10563#10564#0" expanded="true" />
+            <element signature="e#10599#10600#0" expanded="true" />
+            <element signature="e#10650#10651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4446">
+          <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+          <folding>
+            <element signature="e#4666#4667#0" expanded="true" />
+            <element signature="e#4711#4712#0" expanded="true" />
+            <element signature="e#5526#5527#0" expanded="true" />
+            <element signature="e#5553#5554#0" expanded="true" />
+            <element signature="e#5590#5591#0" expanded="true" />
+            <element signature="e#5622#5623#0" expanded="true" />
+            <element signature="e#5653#5654#0" expanded="true" />
+            <element signature="e#5683#5684#0" expanded="true" />
+            <element signature="e#5726#5727#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5821#5822#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
+            <element signature="e#5946#5947#0" expanded="true" />
+            <element signature="e#5986#5987#0" expanded="true" />
+            <element signature="e#7500#7501#0" expanded="true" />
+            <element signature="e#7538#7539#0" expanded="true" />
+            <element signature="e#7569#7570#0" expanded="true" />
+            <element signature="e#7604#7605#0" expanded="true" />
           </folding>
         </state>
       </provider>

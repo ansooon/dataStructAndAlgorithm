@@ -57,7 +57,7 @@ public class SLinkedListDemo {
 
 
         //方法4-1,按顺序获取第k个节点
-//        System.out.println(sLinkedList.findNode(5).toString());
+        System.out.println(sLinkedList.findNode(3).toString());
         //方法4-2，按倒数获取第k个节点
 //        System.out.println(sLinkedList.findLastNode(7));
         //方法4-3，按倒数获取第k个节点
@@ -164,9 +164,9 @@ public class SLinkedListDemo {
 
         //方法12，排序
 //        sLinkedList.sortByData();
-        sLinkedList.sortByNode();
+//        sLinkedList.sortByNode();
 //        sLinkedList.sortByCreateNode();
-        sLinkedList.printNodeData();
+//        sLinkedList.printNodeData();
 
         //方法13，去重
 //        sLinkedList.distinctLink();
@@ -218,6 +218,9 @@ class SLinkedList{
     }
 
     public void printNodeData(){
+        if(head == null){
+            System.out.println("链表为空");
+        }
         Node current = head;
         while(current != null){
             System.out.println(current.data); //sout
@@ -230,7 +233,8 @@ class SLinkedList{
         //首先初始化head节点
         Node current = head;
         if(head == null){
-            head = new Node(data);
+            current = new Node(data);
+            head = current;
             size ++;
         }else{
             while(current.next != null){
@@ -302,6 +306,7 @@ class SLinkedList{
     }
 
 
+
     /**方法2-2
      * 在不知道头结点的情况下删除指定结点：
      * 删除结点的重点在于找出其前结点，使其前结点的指针指向其后结点，即跳过待删除结点
@@ -355,18 +360,24 @@ class SLinkedList{
             return null;
         }
 
-        if (index <= 0 || index > size){
+        if (index <= 0 /*|| index > size*/){
             System.out.println("index out of bound");
         }
 
         Node current = head;
         for (int i = 0; i < index - 1 ; i++) {
             current = current.next;
+            if(current == null){
+                System.out.println("index out of bound");
+                return null;
+            }
         }
 
         return current;
     }
-    //方法4-2，查找顺数第k个链表的数据
+
+
+    //方法4-2，查找倒数第k个链表的数据
     public Node findLastNode(int index){
         return findNode((size + 1) - index);
     }
