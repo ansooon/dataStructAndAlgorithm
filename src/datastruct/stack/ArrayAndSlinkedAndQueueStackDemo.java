@@ -1,7 +1,8 @@
 package datastruct.stack;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Stack;
+import java.util.Queue;
 
 /**
  * @author zhongshanhuang
@@ -46,8 +47,33 @@ public class ArrayAndSlinkedAndQueueStackDemo {
 //        System.out.println("添加后取数：");
 //        System.out.println(slinkedListStack.pop());
 //        System.out.println(slinkedListStack.pop());
+
+        /***********************************************
+         *              3，利用双队列
+         */
+        QueueStack<Integer> queueStack = new QueueStack<>();
+        queueStack.push(1);
+        queueStack.push(2);
+        queueStack.push(3);
+        System.out.println(queueStack.peek());
+
+        System.out.println("取出");
+        System.out.println(queueStack.pop());
+        System.out.println(queueStack.pop());
+        System.out.println(queueStack.pop());
+
+        System.out.println("加入后取出");
+        queueStack.push(4);
+        queueStack.push(5);
+        queueStack.push(6);
+        System.out.println(queueStack.peek());
+        System.out.println(queueStack.pop());
+        System.out.println(queueStack.pop());
+        System.out.println(queueStack.pop());
     }
 }
+
+
 
 
 class ArrayStack<E>{
@@ -159,4 +185,105 @@ class SlinkedListStack<E>{
     public boolean isEmpty(){
         return head == null;
     }
+}
+
+class QueueStack<E>{
+    Queue<E> queue1 = new ArrayDeque<>();
+    Queue<E> queue2 = new ArrayDeque<>();
+
+    /*
+     * 1,向栈中压入数据
+     */
+    public void push(E data){
+        //两个队列都为空时，优先考虑 queue1
+        if(isEmpty()){
+            queue1.add(data);
+            return;
+        }
+
+        //如果queue1为空，queue2有数据，直接放入queue2
+        if(queue1.isEmpty()){
+            queue2.add(data);
+            return;
+        }
+
+        //如果queue2为空，queue1有数据，直接放入queue1中
+        if(queue2.isEmpty()){
+            queue1.add(data);
+            return;
+        }
+    }
+
+
+    /*
+     * 2 从栈中弹出一个数据
+     */
+    public E pop(){
+        //如果两个栈都为空，则没有元素可以弹出，异常
+        if(isEmpty()){
+            try{
+                throw new Exception("satck is empty!");
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+
+        //如果queue1中没有元素，queue2中有元素，将其queue2中的元素依次放入queue1中，直到最后一个元素，弹出即可
+        if(queue1.isEmpty()){
+            while(queue2.size() > 1){
+                queue1.add(queue2.poll());
+            }
+            return (E)queue2.poll();
+        }
+
+        //如果queue2中没有元素，queue1中有元素，将其queue1中的元素依次放入queue2中，直到最后一个元素，弹出即可
+        if(queue2.isEmpty()){
+            while(queue1.size() > 1){
+                queue2.add(queue1.poll());
+            }
+            return (E)queue1.poll();
+        }
+
+        return null;
+    }
+
+    /*
+     * 3 从栈中弹出一个数据
+     */
+    public E peek(){
+        //如果两个栈都为空，则没有元素可以弹出，异常
+        if(isEmpty()){
+            try{
+                throw new Exception("satck is empty!");
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+
+        E peekData = null;
+        //如果queue1中没有元素，queue2中有元素，将其queue2中的元素依次放入queue1中，直到最后一个元素，弹出即可
+        if(queue1.isEmpty()){
+            while(queue2.size() > 1){
+                queue1.add(queue2.poll());
+            }
+            peekData = queue2.poll();
+            queue1.add(peekData);
+        }
+
+        //如果queue2中没有元素，queue1中有元素，将其queue1中的元素依次放入queue2中，直到最后一个元素，弹出即可
+        if(queue2.isEmpty()){
+            while(queue1.size() > 1){
+                queue2.add(queue1.poll());
+            }
+            peekData = queue1.poll();
+            queue2.add(peekData); //重新将元素放回去
+        }
+
+        return peekData;
+    }
+
+    public boolean isEmpty(){
+        return queue1.isEmpty() && queue2.isEmpty();
+    }
+
 }
