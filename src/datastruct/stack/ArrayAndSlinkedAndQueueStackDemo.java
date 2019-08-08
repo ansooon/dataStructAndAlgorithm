@@ -10,6 +10,10 @@ import java.util.Queue;
  * @email zhongshanhuang@caih.com
  * @create 2019-08-07 23:29
  */
+
+/**
+ * 测试类
+ */
 public class ArrayAndSlinkedAndQueueStackDemo {
     public static void main(String[] args) {
 
@@ -74,8 +78,10 @@ public class ArrayAndSlinkedAndQueueStackDemo {
 }
 
 
-
-
+/**
+ * 1，队列实现栈
+ * @param <E>
+ */
 class ArrayStack<E>{
     private Object[] arr;
     private int size;
@@ -131,6 +137,10 @@ class ArrayStack<E>{
 }
 
 
+/**
+ * 2，单链表实现栈
+ * @param <E>
+ */
 class SlinkedListStack<E>{
     private Node head;
     private int size;
@@ -187,6 +197,11 @@ class SlinkedListStack<E>{
     }
 }
 
+
+/**
+ * 3，双队列实现栈
+ * @param <E>
+ */
 class QueueStack<E>{
     Queue<E> queue1 = new ArrayDeque<>();
     Queue<E> queue2 = new ArrayDeque<>();

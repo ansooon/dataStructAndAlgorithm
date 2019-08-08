@@ -179,13 +179,18 @@ public class SLinkedListDemo {
 
 }
 
-
+/**
+ * 链表类
+ */
 class SLinkedList{
     public Node head;
 //    public Node current;  //在多线程环境中可能会出问题
     int size;
 
 
+    /**
+     * 内部节点类
+     */
     class Node{
         int data;    //数据域
         Node next;   //指针域
