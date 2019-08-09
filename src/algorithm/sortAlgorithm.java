@@ -13,20 +13,96 @@ import java.util.Date;
  */
 public class sortAlgorithm {
     public static void main(String[] args) {
-        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+//        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4};
 
-//        int[] arr = new int[80000];
-//        for (int i = 0; i < 80000; i++) {
-//            arr[i] = (int)(Math.random() * 800000);
-//        }
+        int[] arr1 = new int[40000000];
+        for (int i = 0; i < 40000000; i++) {
+            arr1[i] = (int) (Math.random() * 40000000);
+        }
+
+        int[] arr2 = Arrays.copyOf(arr1, arr1.length);
+        int[] arr3 = Arrays.copyOf(arr1, arr1.length);
+        int[] arr4 = Arrays.copyOf(arr1, arr1.length);
+        int[] arr5 = Arrays.copyOf(arr1, arr1.length);
+        int[] arr6 = Arrays.copyOf(arr1, arr1.length);
+        int[] arr7 = Arrays.copyOf(arr1, arr1.length);
 
         //1-1，冒泡排序
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        System.out.println("冒泡排序排序前");
+//        System.out.println(Arrays.toString(arr1));
+//        long start1 = System.currentTimeMillis();
+//        Sort.bubbleSort(arr1);
+//        long stop1 = System.currentTimeMillis();
+//        System.out.println("1-1冒泡排序耗时:" + (stop1 - start1) / 100);
+//        System.out.println("冒泡排序排序后");
+//        System.out.println(Arrays.toString(arr1));
+
+
+        //1-2,快交排序
+//        System.out.println("快交排序排序前");
+//        System.out.println(Arrays.toString(arr2));
+        long start2 = System.currentTimeMillis();
+        Sort.quickSort(arr2, 0, arr2.length - 1);
+        long stop2 = System.currentTimeMillis();
+        System.out.println("1-2快交排序耗时:" + (stop2 - start2) / 100);
+//        System.out.println("快交排序排序后");
+//        System.out.println(Arrays.toString(arr2));
+
+        //2-1，选择排序
+//        System.out.println("选择排序排序前");
+//        System.out.println(Arrays.toString(arr3));
+//        long start3 = System.currentTimeMillis();
+//        Sort.selectSort(arr3);
+//        long stop3 = System.currentTimeMillis();
+//        System.out.println("2-1选择排序耗时:" + (stop3 - start3) / 100);
+//        System.out.println("选择排序排序后");
+//        System.out.println(Arrays.toString(arr3));
+
+
+        //3-1，插入排序
+//        System.out.println("插入排序排序前");
+//        System.out.println(Arrays.toString(arr4));
+//        long start4 = System.currentTimeMillis();
+//        Sort.insertSort(arr4);
+//        long stop4 = System.currentTimeMillis();
+//        System.out.println("3-1插入排序耗时:" + (stop4 - start4) / 100);
+//        System.out.println("插入排序排序后");
+//        System.out.println(Arrays.toString(arr4));
+
+        //3-2-1，希尔排序
+//        System.out.println("排序前");
+//        System.out.println(Arrays.toString(arr));
+//        Sort.insertBasedShellBySwapSort(arr);
+//        System.out.println("排序后");
+//        System.out.println(Arrays.toString(arr));
+
+        //3-2-2，希尔排序
+//        System.out.println("希尔排序排序前");
+//        System.out.println(Arrays.toString(arr5));
+        long start5 = System.currentTimeMillis();
+        Sort.insertBasedShellByMoveSort(arr5);
+        long stop5 = System.currentTimeMillis();
+        System.out.println("3-2希尔排序耗时:" + (stop5 - start5) / 100);
+//        System.out.println("希尔排序排序后");
+//        System.out.println(Arrays.toString(arr5));
+
+        //4，归并排序
+//        System.out.println("归并排序排序前");
+//        System.out.println(Arrays.toString(arr6));
+        long start6 = System.currentTimeMillis();
+        Sort.mergeSort(arr6, 0, arr6.length - 1, new int[arr3.length]);
+        long stop6 = System.currentTimeMillis();
+        System.out.println("4归并排序耗时:" + (stop6 - start6) / 100);
+//        System.out.println("归并排序排序后");
+//        System.out.println(Arrays.toString(arr6));
+
+
+        //题外，链表排序
 //        Date date1 = new Date();
 //        String data1Str = simpleDateFormat.format(date1);
 //        System.out.println("排序前");
 //        System.out.println(Arrays.toString(arr));
-//        Sort.bubbleSort(arr);
+//        Sort.slinkedListSort(arr);
 //        System.out.println("排序后");
 //        System.out.println(Arrays.toString(arr));
 //        Date date2 = new Date();
@@ -34,50 +110,16 @@ public class sortAlgorithm {
 //        System.out.println(data1Str);
 //        System.out.println(data2Str);
 
-        //1-2,快交排序
-//        System.out.println("排序前");
-//        System.out.println(Arrays.toString(arr));
-//        Sort.quickSort(arr, 0, arr.length -1);
-//        System.out.println("排序后");
-//        System.out.println(Arrays.toString(arr));
 
-        //2，选择排序
-//        System.out.println("排序前");
-//        System.out.println(Arrays.toString(arr));
-//        Sort.selectSort(arr);
-//        System.out.println("排序后");
-//        System.out.println(Arrays.toString(arr));
-
-
-        //3，插入排序
-//        System.out.println("排序前");
-//        System.out.println(Arrays.toString(arr));
-//        Sort.insertSort(arr);
-//        System.out.println("排序后");
-//        System.out.println(Arrays.toString(arr));
-
-        //4-1，希尔排序
-//        System.out.println("排序前");
-//        System.out.println(Arrays.toString(arr));
-//        Sort.insertBasedShellBySwapSort(arr);
-//        System.out.println("排序后");
-//        System.out.println(Arrays.toString(arr));
-
-        //4-2，希尔排序
-//        System.out.println("排序前");
-//        System.out.println(Arrays.toString(arr));
-//        Sort.insertBasedShellByMoveSort(arr);
-//        System.out.println("排序后");
-//        System.out.println(Arrays.toString(arr));
     }
 }
 
 /**
  * 1插入排序（直插排序，[希尔排序]），2选择排序（简选排序，[堆排序]），3交换排序（冒泡排序，[快交排序]），4归并排序，5基数排序。
  * 时间频度（取最高次项，忽略低次项）；时间复杂度（取n无穷大时的最高次项：1,lgn，n，nlgn，线性对数阶，n^2）
+ * 速度：快交 微> 归并（耗内存）> 希尔 > 选择 > 插入 > 冒泡
  */
 class Sort {
-
 
     /**
      * 1-1,交换：冒泡排序。依次交换相邻逆序位置。
@@ -92,7 +134,9 @@ class Sort {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     sortFinish = false;  //假设不成立
-                    swap(temp, j, arr);
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
 //            System.out.println("第" + (i + 1) + "次排序结果");
@@ -109,31 +153,32 @@ class Sort {
 
     /**
      * 1-2，交换，快交排序。以中间作为分界线分左右两边大小，递归处理
+     *
      * @param arr
      * @param left
      * @param right
      */
-    public static void quickSort(int[] arr, int left, int right){
+    public static void quickSort(int[] arr, int left, int right) {
         int l = left;
         int r = right;
         int middle = arr[(l + r) >> 1]; //除以2
         int temp = 0; //交换时的值
 
         //while循环到的目的是让比middle值小的放到左边，比其大的放到右边
-        while (l < r){
+        while (l < r) {
 
             //在mid的左边一直找到大于等于mid的值
-            while (arr[l] < middle){ //正序，一定能退出，只要等于它自己就一定会退出，最差的情况
+            while (arr[l] < middle) { //正序，一定能退出，只要等于它自己就一定会退出，最差的情况
                 l += 1;
             }
 
             //在mid的右边一直找到小于等于mid的值
-            while (arr[r] > middle){ //正序
+            while (arr[r] > middle) { //正序
                 r -= 1;
             }
 
             //如果l >= r，说明左右两边的值都都以mid作为分界线分大小
-            if(l >= r){
+            if (l >= r) {
                 break;
             }
 
@@ -143,28 +188,28 @@ class Sort {
             arr[r] = temp;
 
             //如果交换完了之后，发现 arr[l] == mid，那么将r--，前移一步.
-            if(arr[l] == middle){
+            if (arr[l] == middle) {
                 r -= 1;
             }
 
             //如果交换完了之后，发现 arr[r] == mid，那么将l--，前移一步.
-            if(arr[r] == middle){
+            if (arr[r] == middle) {
                 l += 1;
             }
         }
 
         //如果l == r,必须l++，r--,否则出现栈溢出
-        if(l == r){
+        if (l == r) {
             l += 1;
             r -= 1;
         }
 
         //向左递归
-        if(left < r){  //因为每次都取中，当向左边移动时，r时越来越靠近left直到相等
+        if (left < r) {  //因为每次都取中，当向左边移动时，r时越来越靠近left直到相等
             quickSort(arr, left, r);
         }
 
-        if(right > l){
+        if (right > l) {
             quickSort(arr, l, right);
         }
     }
@@ -243,14 +288,14 @@ class Sort {
         int cnt = 0;
         for (int gap = arr.length / 2; gap > 0; gap /= 2) {
             //1，按照步长分组，
-            for (int i = gap; i < arr.length; i ++) {
+            for (int i = gap; i < arr.length; i++) {
                 //遍历各组中给所有的元素（当有五组时，每组2个元素，遍历2个元素只需1次，当有2组的时候后，每组共5个元素，要遍历4次。但是是分散比较的）
                 //步长：j -= gap:保证向右迭代时，能够在有序列中寻找到合适的位置插入，交换位置时效率不高，要优化成插入排序法，能够高效找出为位置，
                 // ，即找到位置一次性插入，而不是都有两两比较一遍。
                 //总之，分组内的排序时通过相邻交换位置法，达到从无序插入有序的插入法实现。
-                for (int j = i - gap; j >= 0 ; j -= gap) {
+                for (int j = i - gap; j >= 0; j -= gap) {
                     //如果当前的元素大于还加上步长后的那个元素，说明交换(交换法)
-                    if(arr[j] > arr[j + gap]){
+                    if (arr[j] > arr[j + gap]) {
                         temp = arr[j];
                         arr[j] = arr[j + gap];
                         arr[j + gap] = temp;
@@ -291,13 +336,123 @@ class Sort {
     }
 
 
+    public static void mergeSort(int[] arr, int left, int right, int[] temp) {
+        if (left < right) {
+            int mid = (left + right) >> 1;  //中间索引
+            //向左递归进行分解
+            mergeSort(arr, left, mid, temp);
+            //向右递归进行分解
+            mergeSort(arr, mid + 1, right, temp);
+            //到合并
+            merge(arr, left, mid, right, temp);
+        }
+    }
 
 
+    /**
+     * 归
+     *
+     * @param arr
+     * @param left
+     * @param mid
+     * @param right
+     * @param temp
+     */
+    public static void merge(int[] arr, int left, int mid, int right, int[] temp) {
+//        System.out.println("***");
+        int i = left;
+        int j = mid + 1;
+        int t = 0; //指向temp数组的当前索引
+
+        //1，先把左右两边（有序）的数据。按照规则填充到temp数组，直到左右两边的有序序列处理完毕为止
+        while (i <= mid && j <= right) { //继续
+            //当左边的元素小于等于右边的元素。
+            // 当等于时，右边的数要么比左边下一个数小，要么等于，如果是小于则右边的数也被填充，如果最后剩下，那么也会被整体被填充到新数组。
+            if (arr[i] <= arr[j]) {
+                temp[t] = arr[i];
+                t++;
+                i++;
+            } else {
+                temp[t] = arr[j];
+                t++;
+                j++;
+            }
+        }
+
+        //2，把有剩余数据的一边依次填充到temp
+        while (i <= mid) {
+            temp[t] = arr[i];
+            t++;
+            i++;
+        }
+        while (j <= right) {
+            temp[t] = arr[j];
+            t++;
+            j++;
+        }
+        //3，将temp重新copy到arr。并不是每次都拷贝全部.每次拷贝分成的那几个数组。因为数组已经放在栈中，所以
+        t = 0;
+        int tempLeft = left;
+//        System.out.print("tempLeft = " + tempLeft + ",");
+//        System.out.println("right = " + right);
+        while (tempLeft <= right) {
+            arr[tempLeft] = temp[t];
+            t++;
+            tempLeft++;
+        }
+
+    }
 
 
-    private static void swap(int funData, int j, int[] arr) {
-        funData = arr[j];     //先换当前
-        arr[j] = arr[j + 1];
-        arr[j + 1] = funData;
+    public static void slinkedListSort(int[] arr) {
+        SLinkedList sLinkedList = new SLinkedList();
+        for (int i = 0; i < arr.length; i++) {
+            sLinkedList.addByOrder(arr[i]);
+        }
+
+        sLinkedList.reSetArr(arr);
+    }
+
+}
+
+
+class SLinkedList {
+    Node head = new Node(0);
+    int size;
+
+    class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+        }
+    }
+
+    public void addByOrder(int data) {
+
+        Node cur = head; //每次添加进来都是从头开始
+        Node newNode = new Node(data);
+        while (true) {
+            if (cur.next == null) {
+                break;
+            }
+
+            if (cur.next.data >= data) {  //逆序找位置
+                break;
+            }
+            cur = cur.next;
+        }
+        newNode.next = cur.next;
+        cur.next = newNode;
+        size++;
+    }
+
+    public void reSetArr(int[] arr) {
+        Node cur = head.next;
+        for (int i = 0; i < size; i++) {
+            arr[i] = cur.data;
+            cur = cur.next;
+        }
     }
 }
