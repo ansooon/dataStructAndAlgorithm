@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409302d0-9a45-4571-b541-e1dc45ec38ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/algorithm/searchAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,24 +65,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="17810" />
+          <entry key="java" value="19225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17810" />
+          <entry key="JAVA" value="19225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="29" />
+          <entry key="java" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="30" />
         </counts>
       </usages-collector>
     </session>
@@ -110,15 +110,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="121" column="12" lean-forward="true" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+            <state relative-caret-position="-6016">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#11502#11503#0" expanded="true" />
                 <element signature="e#11542#11543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/searchAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,6 +182,9 @@
         <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/findAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/seqSearchAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/searchAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -210,34 +225,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sortAlgorithm.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleLinkedListDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -249,7 +236,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565333874960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565339890453" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -278,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sortAlgorithm">
+  <component name="RunManager" selected="Application.searchAlgorithm">
     <configuration name="ArrayAndSlinkedAndQueueStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastruct.stack.ArrayAndSlinkedAndQueueStackDemo" />
       <module name="datastructAndAlgorithm" />
@@ -305,12 +292,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.linkedList.SLinkedListDemo" />
+    <configuration name="recursiveAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.recursiveAlgorithm" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastruct.linkedList.*" />
+          <option name="PATTERN" value="algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,8 +305,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="recursiveAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.recursiveAlgorithm" />
+    <configuration name="searchAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.searchAlgorithm" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -345,19 +332,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SLinkedListDemo" />
       <item itemvalue="Application.ArrayAndSlinkedListAndStackQueueDemo" />
       <item itemvalue="Application.ArrayAndSlinkedAndQueueStackDemo" />
       <item itemvalue="Application.recursiveAlgorithm" />
       <item itemvalue="Application.sortAlgorithm" />
+      <item itemvalue="Application.searchAlgorithm" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.searchAlgorithm" />
         <item itemvalue="Application.sortAlgorithm" />
         <item itemvalue="Application.recursiveAlgorithm" />
         <item itemvalue="Application.ArrayAndSlinkedListAndStackQueueDemo" />
         <item itemvalue="Application.ArrayAndSlinkedAndQueueStackDemo" />
-        <item itemvalue="Application.SLinkedListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -386,18 +373,18 @@
       <workItem from="1565070675166" duration="20026000" />
       <workItem from="1565164071205" duration="20022000" />
       <workItem from="1565248688993" duration="24262000" />
-      <workItem from="1565325173998" duration="8655000" />
+      <workItem from="1565325173998" duration="14538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148077000" />
+    <option name="totallyTimeSpent" value="153960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15845825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1745182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,8 +393,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34407365" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37744534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18757193" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34637514" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -611,12 +598,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="121" column="12" lean-forward="true" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+        <state relative-caret-position="-6016">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#11502#11503#0" expanded="true" />
             <element signature="e#11542#11543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/searchAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
