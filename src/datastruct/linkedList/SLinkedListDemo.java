@@ -257,7 +257,7 @@ class SLinkedList{
             head = node;
             size ++;
         }else{
-            while(current.next != null){
+            while(current.next != null){  //等于括号前 if(current.next == null) break;
                 current = current.next;
             }
 

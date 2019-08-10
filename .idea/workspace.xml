@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409302d0-9a45-4571-b541-e1dc45ec38ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/searchAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/hashTable/HashTabDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/sortAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/sortAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,33 +65,34 @@
     <session id="1311927934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="19225" />
+          <entry key="java" value="27734" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19225" />
+          <entry key="JAVA" value="27734" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="30" />
+          <entry key="java" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="35" />
         </counts>
       </usages-collector>
     </session>
@@ -90,47 +100,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2014">
-              <caret line="190" column="7" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="210" column="13" lean-forward="true" selection-start-line="210" selection-start-column="13" selection-end-line="210" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6016">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#11502#11503#0" expanded="true" />
-                <element signature="e#11542#11543#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="688">
+              <caret line="194" column="24" lean-forward="true" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algorithm/searchAlgorithm.java">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="106">
+              <caret line="269" column="36" selection-start-line="269" selection-start-column="36" selection-end-line="269" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1130#1131#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,15 +202,19 @@
         <option value="$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayLoopQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm/findAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm/seqSearchAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm/searchAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/hashTable/HashTabDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -206,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,18 +254,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="sortAlgorithm.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565339890453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565446990719" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -265,13 +308,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.searchAlgorithm">
-    <configuration name="ArrayAndSlinkedAndQueueStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.stack.ArrayAndSlinkedAndQueueStackDemo" />
+  <component name="RunManager" selected="Application.sortAlgorithm">
+    <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.tree.ArrBinaryTreeDemo" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastruct.stack.*" />
+          <option name="PATTERN" value="datastruct.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -279,12 +322,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayAndSlinkedListAndStackQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.queue.ArrayAndSlinkedListAndStackQueueDemo" />
+    <configuration name="BinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.tree.BinaryTreeDemo" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastruct.queue.*" />
+          <option name="PATTERN" value="datastruct.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -292,12 +335,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="recursiveAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.recursiveAlgorithm" />
+    <configuration name="HashTabDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.hashTable.HashTabDemo" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.*" />
+          <option name="PATTERN" value="datastruct.hashTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,12 +348,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="searchAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.searchAlgorithm" />
+    <configuration name="ThreadedBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.tree.ThreadedBinaryTreeDemo" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.*" />
+          <option name="PATTERN" value="datastruct.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -332,19 +375,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ArrayAndSlinkedListAndStackQueueDemo" />
-      <item itemvalue="Application.ArrayAndSlinkedAndQueueStackDemo" />
-      <item itemvalue="Application.recursiveAlgorithm" />
       <item itemvalue="Application.sortAlgorithm" />
-      <item itemvalue="Application.searchAlgorithm" />
+      <item itemvalue="Application.HashTabDemo" />
+      <item itemvalue="Application.BinaryTreeDemo" />
+      <item itemvalue="Application.ArrBinaryTreeDemo" />
+      <item itemvalue="Application.ThreadedBinaryTreeDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.searchAlgorithm" />
         <item itemvalue="Application.sortAlgorithm" />
-        <item itemvalue="Application.recursiveAlgorithm" />
-        <item itemvalue="Application.ArrayAndSlinkedListAndStackQueueDemo" />
-        <item itemvalue="Application.ArrayAndSlinkedAndQueueStackDemo" />
+        <item itemvalue="Application.ThreadedBinaryTreeDemo" />
+        <item itemvalue="Application.ArrBinaryTreeDemo" />
+        <item itemvalue="Application.BinaryTreeDemo" />
+        <item itemvalue="Application.HashTabDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -373,18 +416,19 @@
       <workItem from="1565070675166" duration="20026000" />
       <workItem from="1565164071205" duration="20022000" />
       <workItem from="1565248688993" duration="24262000" />
-      <workItem from="1565325173998" duration="14538000" />
+      <workItem from="1565325173998" duration="23523000" />
+      <workItem from="1565410393557" duration="28465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153960000" />
+    <option name="totallyTimeSpent" value="191410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1745182" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1761242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -393,8 +437,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18757193" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34637514" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22669736" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38665134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -466,12 +510,6 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java</url>
-          <line>273</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java</url>
           <line>64</line>
           <properties />
@@ -479,9 +517,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java</url>
-          <line>339</line>
+          <line>420</line>
           <properties />
-          <option name="timeStamp" value="59" />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java</url>
+          <line>328</line>
+          <properties />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -581,37 +625,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="722">
           <caret line="210" column="13" lean-forward="true" selection-start-line="210" selection-start-column="13" selection-end-line="210" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="190" column="7" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
+        <state relative-caret-position="4560">
+          <caret line="244" column="40" selection-start-line="244" selection-start-column="40" selection-end-line="244" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6016">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11502#11503#0" expanded="true" />
-            <element signature="e#11542#11543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/searchAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="167">
+          <caret line="101" column="38" lean-forward="true" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/hashTable/HashTabDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1915">
+          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="194" column="24" lean-forward="true" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="269" column="36" selection-start-line="269" selection-start-column="36" selection-end-line="269" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

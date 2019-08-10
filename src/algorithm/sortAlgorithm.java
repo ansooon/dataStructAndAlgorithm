@@ -13,19 +13,19 @@ import java.util.Date;
  */
 public class sortAlgorithm {
     public static void main(String[] args) {
-//        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4};
+        int[] arr = {4, 6, 8, 5, 9};
 
-        int[] arr1 = new int[40000000];
-        for (int i = 0; i < 40000000; i++) {
-            arr1[i] = (int) (Math.random() * 40000000);
-        }
-
-        int[] arr2 = Arrays.copyOf(arr1, arr1.length);
-        int[] arr3 = Arrays.copyOf(arr1, arr1.length);
-        int[] arr4 = Arrays.copyOf(arr1, arr1.length);
-        int[] arr5 = Arrays.copyOf(arr1, arr1.length);
-        int[] arr6 = Arrays.copyOf(arr1, arr1.length);
-        int[] arr7 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr1 = new int[40000000];
+//        for (int i = 0; i < 40000000; i++) {
+//            arr1[i] = (int) (Math.random() * 40000000);
+//        }
+//
+//        int[] arr2 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr3 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr4 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr5 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr6 = Arrays.copyOf(arr1, arr1.length);
+//        int[] arr7 = Arrays.copyOf(arr1, arr1.length);
 
         //1-1，冒泡排序
 //        System.out.println("冒泡排序排序前");
@@ -41,10 +41,10 @@ public class sortAlgorithm {
         //1-2,快交排序
 //        System.out.println("快交排序排序前");
 //        System.out.println(Arrays.toString(arr2));
-        long start2 = System.currentTimeMillis();
-        Sort.quickSort(arr2, 0, arr2.length - 1);
-        long stop2 = System.currentTimeMillis();
-        System.out.println("1-2快交排序耗时:" + (stop2 - start2) / 100);
+//        long start2 = System.currentTimeMillis();
+//        Sort.quickSort(arr2, 0, arr2.length - 1);
+//        long stop2 = System.currentTimeMillis();
+//        System.out.println("1-2快交排序耗时:" + (stop2 - start2) / 100);
 //        System.out.println("快交排序排序后");
 //        System.out.println(Arrays.toString(arr2));
 
@@ -57,6 +57,16 @@ public class sortAlgorithm {
 //        System.out.println("2-1选择排序耗时:" + (stop3 - start3) / 100);
 //        System.out.println("选择排序排序后");
 //        System.out.println(Arrays.toString(arr3));
+
+        //2-2，堆排序
+        System.out.println("选择排序排序前");
+        System.out.println(Arrays.toString(arr));
+        long start3 = System.currentTimeMillis();
+        Sort.heapSort(arr);
+        long stop3 = System.currentTimeMillis();
+        System.out.println("2-1选择排序耗时:" + (stop3 - start3) / 100);
+        System.out.println("选择排序排序后");
+        System.out.println(Arrays.toString(arr));
 
 
         //3-1，插入排序
@@ -79,20 +89,20 @@ public class sortAlgorithm {
         //3-2-2，希尔排序
 //        System.out.println("希尔排序排序前");
 //        System.out.println(Arrays.toString(arr5));
-        long start5 = System.currentTimeMillis();
-        Sort.insertBasedShellByMoveSort(arr5);
-        long stop5 = System.currentTimeMillis();
-        System.out.println("3-2希尔排序耗时:" + (stop5 - start5) / 100);
+//        long start5 = System.currentTimeMillis();
+//        Sort.insertBasedShellByMoveSort(arr5);
+//        long stop5 = System.currentTimeMillis();
+//        System.out.println("3-2希尔排序耗时:" + (stop5 - start5) / 100);
 //        System.out.println("希尔排序排序后");
 //        System.out.println(Arrays.toString(arr5));
 
         //4，归并排序
 //        System.out.println("归并排序排序前");
 //        System.out.println(Arrays.toString(arr6));
-        long start6 = System.currentTimeMillis();
-        Sort.mergeSort(arr6, 0, arr6.length - 1, new int[arr3.length]);
-        long stop6 = System.currentTimeMillis();
-        System.out.println("4归并排序耗时:" + (stop6 - start6) / 100);
+//        long start6 = System.currentTimeMillis();
+//        Sort.mergeSort(arr, 0, arr.length - 1, new int[arr.length]);
+//        long stop6 = System.currentTimeMillis();
+//        System.out.println("4归并排序耗时:" + (stop6 - start6) / 100);
 //        System.out.println("归并排序排序后");
 //        System.out.println(Arrays.toString(arr6));
 
@@ -161,20 +171,22 @@ class Sort {
     public static void quickSort(int[] arr, int left, int right) {
         int l = left;
         int r = right;
-        int middle = arr[(l + r) >> 1]; //除以2
+        int mid = arr[(l + r) >> 1]; //除以2
         int temp = 0; //交换时的值
 
         //while循环到的目的是让比middle值小的放到左边，比其大的放到右边
         while (l < r) {
 
             //在mid的左边一直找到大于等于mid的值
-            while (arr[l] < middle) { //正序，一定能退出，只要等于它自己就一定会退出，最差的情况
-                l += 1;
+            while (arr[l] < mid) { //正序，一定能退出，只要等于它自己就一定会退出，最差的情况
+//                l += 1;
+                l++;
             }
 
             //在mid的右边一直找到小于等于mid的值
-            while (arr[r] > middle) { //正序
-                r -= 1;
+            while (arr[r] > mid) { //正序
+//                r -= 1;
+                r--;
             }
 
             //如果l >= r，说明左右两边的值都都以mid作为分界线分大小
@@ -188,20 +200,24 @@ class Sort {
             arr[r] = temp;
 
             //如果交换完了之后，发现 arr[l] == mid，那么将r--，前移一步.
-            if (arr[l] == middle) {
-                r -= 1;
+            if (arr[l] == mid) {
+//                r -= 1;
+                r--;
             }
 
             //如果交换完了之后，发现 arr[r] == mid，那么将l--，前移一步.
-            if (arr[r] == middle) {
-                l += 1;
+            if (arr[r] == mid) {
+//                l += 1;
+                l++;
             }
         }
 
         //如果l == r,必须l++，r--,否则出现栈溢出
         if (l == r) {
-            l += 1;
-            r -= 1;
+//            l += 1;
+//            r -= 1;
+            l++;
+            r--;
         }
 
         //向左递归
@@ -240,6 +256,63 @@ class Sort {
 //            System.out.println(Arrays.toString(arr));
         }
     }
+
+
+    /**
+     * 2-2，选择排序，堆排序。升序大顶锥，降序小顶锥
+     *
+     * @param arr
+     */
+    public static void heapSort(int[] arr) {
+        int temp;
+
+        //1， 将无序序列构建成一个堆。根据升序降序需求选择大顶锥和小顶锥。
+        //从最后一个非叶子节点开始。从左至右，从下至上进行调整。
+        //第一次调整是从底部调整，后续调整将从头部开始调整
+        for (int i = arr.length / 2 - 1; i >= 0; i--) {
+            adjustHeap(arr, i, arr.length);
+        }
+
+        //2，将锥顶元素与末尾元素交换，将最大元素"沉"到数组末端
+        //3，重新调整结构，使其满足堆定义，然后继续减缓对顶元素与当前末尾元素，反复执行调整+交换步骤，直到整个序列有序
+        for (int j = arr.length - 1; j > 0; j--) {
+            temp = arr[j];
+            arr[j] = arr[0]; //arr[0]是大顶锥，最大的值
+            arr[0] = temp;
+            adjustHeap(arr, 0, j);
+        }
+    }
+
+
+    /**
+     * 将一个数组(二叉树),调整成一个大顶锥，即将i指向的非叶子节点调整成大顶锥,即i指向为子树中的最大值
+     *
+     * @param arr                     待调整的数组
+     * @param i,                      表示非叶子节点在数组中的索引，最后非叶子节点公式 i = arr.length/2 - 1
+     * @param length，表示多少个元素继续调整，逐渐减少
+     */
+    private static void adjustHeap(int[] arr, int i, int length) {
+        //先取出当前元素的值，保存在临时变量中
+        int temp = arr[i];
+        //开始调整，左节点公式 k = i * 2 + 1
+        for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
+            if (k + 1 < length && arr[k] < arr[k + 1]) {  //说明左子节点的值小于右子节点
+                k++; //k指向右子节点
+            }
+
+            //k指向左右子节点中的最大值
+            if (arr[k] > temp) { //如果子节点大于父节点
+                arr[i] = arr[k]; //把较大的值赋给当前节点
+                i = k;          //让i指向k（结论：左边为指向）
+            } else {
+                break;          //从下至上调整，说明下层无序再调整！
+            }
+        }
+
+        //当for循环结束后，已经将i为父节点的数调整为局部大顶锥
+        arr[i] = temp; //将temp放到最后调整的位置，腾笼换鸟
+    }
+
 
     /**
      * 3-1，插入排序。将右边无序依次列插入左边有序列
@@ -336,15 +409,23 @@ class Sort {
     }
 
 
+    /**
+     * 归并排序
+     *
+     * @param arr
+     * @param left
+     * @param right
+     * @param temp
+     */
     public static void mergeSort(int[] arr, int left, int right, int[] temp) {
         if (left < right) {
             int mid = (left + right) >> 1;  //中间索引
             //向左递归进行分解
-            mergeSort(arr, left, mid, temp);
+            mergeSort(arr, left, mid, temp);  //这些递归只是把mid的值分组而已
             //向右递归进行分解
             mergeSort(arr, mid + 1, right, temp);
             //到合并
-            merge(arr, left, mid, right, temp);
+            merge(arr, left, mid, right, temp);  //非递归
         }
     }
 
