@@ -83,24 +83,24 @@ public class BinaryTreeDemo {
 
 
         //2，查找
-//        HeroNode heroNode1 = binaryTree.preOrderSearch(6);
+//        HeroNode heroNode1 = binaryTree.preOrderSearch(7);
 //        System.out.println("前序查找");
 //        System.out.println(heroNode1);
 
-//        HeroNode heroNode2 = binaryTree.midOrderSearch(3);
+//        HeroNode heroNode2 = binaryTree.midOrderSearch(8);
 //        System.out.println("中序查找");
 //        System.out.println(heroNode2);
 
-//        HeroNode heroNode3 = binaryTree.preOrderSearch(2);
-//        System.out.println("后序查找");
-//        System.out.println(heroNode3);
+        HeroNode heroNode3 = binaryTree.posOrderSearch(8);
+        System.out.println("后序查找");
+        System.out.println(heroNode3);
 
 
         //3，删除节点
-        binaryTree.preOrderList();
-        binaryTree.deleteNode(16);
-        System.out.println("删除后");
-        binaryTree.preOrderList();
+//        binaryTree.preOrderList();
+//        binaryTree.deleteNode(16);
+//        System.out.println("删除后");
+//        binaryTree.preOrderList();
 
     }
 }
@@ -366,9 +366,9 @@ class HeroNode{
         }
 
 
-        if (resNode != null){
-            return resNode;
-        }
+//        if (resNode != null){
+//            return resNode;
+//        }
 
         //如果左右子树都没有找到，就比较当前节点是不是
         if(this.no == no){

@@ -1,4 +1,4 @@
-package datastruct.tree;
+package datastruct.tree.arrBinaryTree;
 
 /**
  * @author zhongshanhuang

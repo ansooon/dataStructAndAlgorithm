@@ -272,6 +272,9 @@ class Sort {
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
             adjustHeap(arr, i, arr.length);
         }
+//        for (int i = arr.length / 2 - 1; i >= 0; i--) {
+//            adjustHeap(arr, 0, arr.length);
+//        }
 
         //2，将锥顶元素与末尾元素交换，将最大元素"沉"到数组末端
         //3，重新调整结构，使其满足堆定义，然后继续减缓对顶元素与当前末尾元素，反复执行调整+交换步骤，直到整个序列有序
