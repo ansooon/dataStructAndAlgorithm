@@ -11,7 +11,7 @@ public class BinarySortTreeDemo {
 
     public static void main(String[] args) {
 
-        int[] arr = {7,3,10,12,5,1,9,2};
+        int[] arr = {10, 11, 7, 6, 8, 9};
 //        int[] arr = {3,7,5,12,10,1,9,2};
         BinarySortTree binarySortTree = new BinarySortTree();
 
@@ -22,16 +22,16 @@ public class BinarySortTreeDemo {
         binarySortTree.infixOrderList();
 
         //2,删除
-        binarySortTree.deleteNode(2);
-        binarySortTree.deleteNode(5);
-        binarySortTree.deleteNode(9);
-        binarySortTree.deleteNode(12);
-        binarySortTree.deleteNode(7);
-        binarySortTree.deleteNode(3);
-        binarySortTree.deleteNode(1);
-        binarySortTree.deleteNode(10);
-        System.out.println("删除后");
-        binarySortTree.infixOrderList();
+//        binarySortTree.deleteNode(2);
+//        binarySortTree.deleteNode(5);
+//        binarySortTree.deleteNode(9);
+//        binarySortTree.deleteNode(12);
+//        binarySortTree.deleteNode(7);
+//        binarySortTree.deleteNode(3);
+//        binarySortTree.deleteNode(1);
+//        binarySortTree.deleteNode(10);
+//        System.out.println("删除后");
+//        binarySortTree.infixOrderList();
 
     }
 }
@@ -218,14 +218,19 @@ class TreeNode{
 
     //中序遍历
     public void infixOrderList(){
+        System.out.println("前");
+
         if (this.left != null){
             this.left.infixOrderList();
+            System.out.println("中");
         }
 
-        System.out.println(this);
+
+//        System.out.println(this);
 
         if (this.right != null){
             this.right.infixOrderList();
+            System.out.println("后");
         }
     }
 

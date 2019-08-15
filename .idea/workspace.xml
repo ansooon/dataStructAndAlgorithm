@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409302d0-9a45-4571-b541-e1dc45ec38ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/arrBinaryTree/ArrBinaryTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/avlTree/AVLTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/binaryTree/BinaryTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/ArrBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/ArrBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/BinaryTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/BinaryTreeDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/HeroNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/HeroNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTree/BinarySortTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTree/BinarySortTreeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTree/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,37 +63,39 @@
     <session id="1311927934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="42130" />
+          <entry key="java" value="50690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="42130" />
+          <entry key="JAVA" value="50690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="55" />
+          <entry key="java" value="66" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="55" />
+          <entry key="JAVA" value="66" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
@@ -107,35 +103,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="817" column="21" lean-forward="true" selection-start-line="817" selection-start-column="21" selection-end-line="817" selection-end-column="21" />
+            <state relative-caret-position="426">
+              <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="46" />
               <folding>
-                <element signature="e#4204#4205#0" expanded="true" />
-                <element signature="e#4236#4237#0" expanded="true" />
-                <element signature="e#4265#4266#0" expanded="true" />
-                <element signature="e#4292#4293#0" expanded="true" />
-                <element signature="e#8572#8581#0" expanded="true" />
-                <element signature="e#8673#8679#0" expanded="true" />
-                <element signature="e#13833#13834#0" expanded="true" />
-                <element signature="e#13887#13888#0" expanded="true" />
-                <element signature="e#14465#14466#0" expanded="true" />
-                <element signature="e#14521#14522#0" expanded="true" />
-                <element signature="e#15091#15092#0" expanded="true" />
-                <element signature="e#15145#15146#0" expanded="true" />
-                <element signature="e#19086#19087#0" expanded="true" />
-                <element signature="e#19121#19122#0" expanded="true" />
-                <element signature="e#20579#20580#0" expanded="true" />
-                <element signature="e#20619#20620#0" expanded="true" />
-                <element signature="e#21776#21777#0" expanded="true" />
-                <element signature="e#21818#21819#0" expanded="true" />
-                <element signature="e#23214#23215#0" expanded="true" />
-                <element signature="e#23276#23277#0" expanded="true" />
-                <element signature="e#24531#24532#0" expanded="true" />
-                <element signature="e#24610#24611#0" expanded="true" />
-                <element signature="e#31903#31923#0" expanded="true" />
+                <element signature="e#26079#26080#0" expanded="true" />
+                <element signature="e#26121#26122#0" expanded="true" />
+                <element signature="e#27517#27518#0" expanded="true" />
+                <element signature="e#27579#27580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="895" selection-start-line="895" selection-end-line="895" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#12537#12538#0" expanded="true" />
+                <element signature="e#12595#12596#0" expanded="true" />
+                <element signature="e#15993#15994#0" expanded="true" />
+                <element signature="e#16072#16073#0" expanded="true" />
+                <element signature="e#14148#14149#0" expanded="true" />
+                <element signature="e#14180#14181#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +157,7 @@
       <find>getRight()</find>
       <find>rightNode</find>
       <find>TreeNode</find>
+      <find>datastruct.tree.bstTreeIntigram.</find>
     </findStrings>
     <replaceStrings>
       <replace>DoubleHeroNode</replace>
@@ -214,9 +210,10 @@
         <option value="$PROJECT_DIR$/src/datastruct/tree/binaryTree/BinaryTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/ThreadedBinaryTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/threadedBinaryTree/BinarySortTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/avlTree/AVLTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" />
       </list>
     </option>
   </component>
@@ -226,7 +223,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="312" />
     <option name="y" value="-939" />
     <option name="width" value="1558" />
@@ -238,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,7 +260,15 @@
               <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayAndSlinkedAndQueueStackDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -269,71 +276,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="datastruct" type="462c0819:PsiDirectoryNode" />
               <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="avlTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="avlTree" type="462c0819:PsiDirectoryNode" />
-              <item name="AVLTreeDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="bstTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="bstTree" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySortTreeDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="bstTreeIntigram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="bstTreeIntigram" type="462c0819:PsiDirectoryNode" />
-              <item name="BinarySortTreeDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565695175085" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565865215284" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -341,6 +302,7 @@
       <recent name="datastruct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\bstTreeV2" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\bstTreeIntigram" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\arrBinaryTree" />
       <recent name="D:\Programing\Javaworkspace\IDEA\src\datastruct" />
@@ -358,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinarySortTreeDemo (2)">
+  <component name="RunManager" selected="Application.BinarySortTreeDemo (3)">
     <configuration name="AVLTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastruct.tree.avlTree.AVLTreeDemo" />
       <module name="datastructAndAlgorithm" />
@@ -398,6 +360,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinarySortTreeDemo (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.tree.bstTreeV2.BinarySortTreeDemo" />
+      <module name="datastructAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastruct.tree.bstTreeV2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastruct.tree.bstTree.BinarySortTreeDemo" />
       <module name="datastructAndAlgorithm" />
@@ -411,33 +386,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastruct.tree.binaryTree.BinaryTreeDemo" />
-      <module name="datastructAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastruct.tree.binaryTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.BinaryTreeDemo (1)" />
       <item itemvalue="Application.BinarySortTreeDemo" />
       <item itemvalue="Application.AVLTreeDemo" />
       <item itemvalue="Application.BinarySortTreeDemo (1)" />
       <item itemvalue="Application.BinarySortTreeDemo (2)" />
+      <item itemvalue="Application.BinarySortTreeDemo (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySortTreeDemo (3)" />
         <item itemvalue="Application.BinarySortTreeDemo (2)" />
+        <item itemvalue="Application.BinarySortTreeDemo" />
         <item itemvalue="Application.BinarySortTreeDemo (1)" />
         <item itemvalue="Application.AVLTreeDemo" />
-        <item itemvalue="Application.BinarySortTreeDemo" />
-        <item itemvalue="Application.BinaryTreeDemo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -470,18 +432,19 @@
       <workItem from="1565410393557" duration="29610000" />
       <workItem from="1565507166352" duration="25196000" />
       <workItem from="1565586918260" duration="19708000" />
-      <workItem from="1565661683813" duration="19040000" />
+      <workItem from="1565661683813" duration="35701000" />
+      <workItem from="1565799509262" duration="536000" />
+      <workItem from="1565839367504" duration="25771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256499000" />
+    <option name="totallyTimeSpent" value="299467000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="-1088" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16970022" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12847966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,8 +453,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30264673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38895282" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36708862" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -582,9 +545,75 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
-          <line>841</line>
+          <line>988</line>
           <properties />
           <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>1286</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>661</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>241</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>279</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>903</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java</url>
+          <line>919</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java</url>
+          <line>797</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java</url>
+          <line>838</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java</url>
+          <line>888</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java</url>
+          <line>895</line>
+          <properties />
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -635,39 +664,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="200" column="3" lean-forward="true" selection-start-line="200" selection-start-column="3" selection-end-line="200" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2634#2635#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2730#2731#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2792#2793#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3692#3693#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#3817#3818#0" expanded="true" />
-            <element signature="e#4431#4432#0" expanded="true" />
-            <element signature="e#4466#4467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" />
     <entry file="file://$PROJECT_DIR$/Test01/out/production/Test01/Test01.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
@@ -774,13 +772,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/tree/threadedBinaryTree/BinarySortTreeDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2534">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/tree/avlTree/AVLTreeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2135">
@@ -788,34 +779,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4604">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="105" column="28" lean-forward="true" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="150" column="7" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-541">
+          <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="817" column="21" lean-forward="true" selection-start-line="817" selection-start-column="21" selection-end-line="817" selection-end-column="21" />
+        <state relative-caret-position="426">
+          <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="46" />
           <folding>
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4265#4266#0" expanded="true" />
-            <element signature="e#4292#4293#0" expanded="true" />
-            <element signature="e#8572#8581#0" expanded="true" />
-            <element signature="e#8673#8679#0" expanded="true" />
-            <element signature="e#13833#13834#0" expanded="true" />
-            <element signature="e#13887#13888#0" expanded="true" />
-            <element signature="e#14465#14466#0" expanded="true" />
-            <element signature="e#14521#14522#0" expanded="true" />
-            <element signature="e#15091#15092#0" expanded="true" />
-            <element signature="e#15145#15146#0" expanded="true" />
-            <element signature="e#19086#19087#0" expanded="true" />
-            <element signature="e#19121#19122#0" expanded="true" />
-            <element signature="e#20579#20580#0" expanded="true" />
-            <element signature="e#20619#20620#0" expanded="true" />
-            <element signature="e#21776#21777#0" expanded="true" />
-            <element signature="e#21818#21819#0" expanded="true" />
-            <element signature="e#23214#23215#0" expanded="true" />
-            <element signature="e#23276#23277#0" expanded="true" />
-            <element signature="e#24531#24532#0" expanded="true" />
-            <element signature="e#24610#24611#0" expanded="true" />
-            <element signature="e#31903#31923#0" expanded="true" />
+            <element signature="e#26079#26080#0" expanded="true" />
+            <element signature="e#26121#26122#0" expanded="true" />
+            <element signature="e#27517#27518#0" expanded="true" />
+            <element signature="e#27579#27580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="895" selection-start-line="895" selection-end-line="895" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12537#12538#0" expanded="true" />
+            <element signature="e#12595#12596#0" expanded="true" />
+            <element signature="e#15993#15994#0" expanded="true" />
+            <element signature="e#16072#16073#0" expanded="true" />
+            <element signature="e#14148#14149#0" expanded="true" />
+            <element signature="e#14180#14181#0" expanded="true" />
           </folding>
         </state>
       </provider>
