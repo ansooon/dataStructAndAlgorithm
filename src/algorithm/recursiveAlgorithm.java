@@ -15,9 +15,13 @@ public class recursiveAlgorithm {
 //        t.test(4);
 
         //2
-        Factorial factorial = new Factorial();
-        int res = factorial.factorial(3);
-        System.out.println(res);
+//        Factorial factorial = new Factorial();
+//        int res = factorial.factorial(3);
+//        System.out.println(res);
+
+        FiBoNaqiNum fiBoNaqiNum = new FiBoNaqiNum();
+        int n = fiBoNaqiNum.fib(5);
+        System.out.println(n);
     }
 }
 
@@ -70,3 +74,16 @@ class Factorial{
     }
 }
 
+
+
+class FiBoNaqiNum{
+
+    public int fib(int n){
+        if(n == 1 || n == 0){
+            return 1;
+        }else{
+            return fib(n - 2) + fib(n - 1);
+        }
+
+    }
+}

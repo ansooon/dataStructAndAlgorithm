@@ -26,32 +26,41 @@ public class BinarySortTreeDemo {
         int[] infixOrder = {6, 7, 8, 9, 10, 11};
         int[] posOrder = {6, 9, 8, 7, 11, 10};
 //        int[] arr = {10, 11, 7, 6, 8};
+
+
         BinaryTree binaryTree = new BinaryTree();
         BinaryTree binaryTree2 = new BinaryTree();
         BinaryTree binaryTree4 = new BinaryTree();
         BinaryTree completeBinaryTree = new BinaryTree();
         BinaryTree avlTree = new BinaryTree();
-        avlTree.buildAvlTree(arr);
 
+        avlTree.buildAvlTree(arr);
         binaryTree.buildTree(arr);
         binaryTree2.buildTree(arr2);
         completeBinaryTree.buildTree(arr3);
         binaryTree4.buildTree(arr4);
-//        binaryTree.preOrderList(binaryTree.getRoot());
 
         //创建镜像数
         Node root = new Node(3);
         Node node1 = new Node(2);
         Node node2 = new Node(2);
         Node node3 = new Node(1);
-        Node node4 = new Node(2);
+        Node node4 = new Node(1);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
-//        node2.right = node4;
+        node2.right = node4;
         BinaryTree duichengTree = new BinaryTree(root);
-        
 
+
+//        //1-1分析基础
+//        binaryTree.binaryTreeRecritOrderShow(binaryTree.getRoot());
+//        //1-2前序遍历
+//        binaryTree.preOrderList(binaryTree.getRoot());
+//        //1-3中序遍历
+//        binaryTree.infixOrderList(binaryTree.getRoot());
+//        //1-4后序遍历
+//        binaryTree.posOrderList(binaryTree.getRoot());
 //        //2-1，分层从上到下，从左往右遍历
 //        System.out.println(binaryTree.leverUpToDownOrderList());
 //        //2-2，分层从下到上，从左往右遍历
@@ -66,10 +75,10 @@ public class BinarySortTreeDemo {
 //        System.out.println(binaryTree.posOrderSearch(binaryTree.getRoot(), 9));
 //        //3-4,二叉排序树搜索
 //        System.out.println(binaryTree.bstTreeSearch(binaryTree.getRoot(), 9));
-//        //3-5,二叉排序树父节点搜索
-//        System.out.println(binaryTree.bstTreeParentSearch(binaryTree.getRoot(), 7));
-//        //3-6,一般二叉树父节点搜索
+//        //3-5,一般二叉树父节点搜索
 //        System.out.println(binaryTree.btTreeParentSearch(binaryTree.getRoot(), 7));
+//        //3-6,二叉排序树父节点搜索
+//        System.out.println(binaryTree.bstTreeParentSearch(binaryTree.getRoot(), 7));
 //        //3-7,寻找二叉排序树中两节点的最近公共祖先
 //        System.out.println(binaryTree.lowestCommonAncestorForBstTreeSearch(
 //                binaryTree.getRoot(),
@@ -85,39 +94,50 @@ public class BinarySortTreeDemo {
 //                binaryTree.getRoot(),
 //                binaryTree.bstTreeSearch(binaryTree.getRoot(), 6),
 //                binaryTree.bstTreeSearch(binaryTree.getRoot(), 9)));
+//        //3-9,给定一棵二叉搜索树，请找出其中的第k小的结点
+//        System.out.println(binaryTree.KthNode(binaryTree.getRoot(),3));
 //        //4-1,获取当前节点为根节点的树的最大高度
 //        System.out.println(binaryTree.getLocalRootMaxHeight(binaryTree.getRoot()));
-//        //4-2,获取当前节点为根节点的树的最大高度
+//        //4-2,获取当前节点为根节点的树的最小高度
 //        System.out.println(binaryTree.getLocalRootMinHeight(binaryTree.getRoot()));
-//        //4-3,获取当前节点为根节点的树的最大直径
+//        //4-3,获取当前节点为根节点的树的最小深度//深度 = 高度 - 1
+//        System.out.println(binaryTree.getLocalRootMinDepth(binaryTree.getRoot()));
+//        //4-4,获取当前节点为根节点的树的最大直径
 //        System.out.println(binaryTree.getDiameter(binaryTree.getRoot()));
 //        //5-1,获取树的节点个数
 //        System.out.println(binaryTree.getNodeNum(binaryTree.getRoot()));
 //        //5-2,获取第K层的节点个数
 //        System.out.println(binaryTree.getLeverKNodeNum(binaryTree.getRoot(), 5));
-//        //6-1,判断两棵树是否是同一个颗树
-//        System.out.println(binaryTree.isSamTree(avlTree.getRoot(), avlTree.getRoot()));
-//        //6-2,判断一棵树是否是平衡二叉树
+//        //6-1,判断一棵树是否是平衡二叉树
 //        System.out.println(binaryTree.isAvlTree(avlTree.getRoot()));
-        //6-3,判断一棵树是否是镜像树
-//        System.out.println(duichengTree.isSymmetricTree(duichengTree.getRoot()));
-//        //6-4,判断一棵树是否是完全二叉树
+//        //6-2,判断一棵树是否是完全二叉树
 //        System.out.println(completeBinaryTree.isCompleteTree(completeBinaryTree.getRoot()));
-//        6-5,判断第二颗树是否是第一颗树的子树
+//        //6-3,判断一棵树是否是镜像树
+//        System.out.println(duichengTree.isSymmetricTree(duichengTree.getRoot()));
+//        //6-4,判断两棵树是否是同一个颗树
+//        System.out.println(binaryTree.isSamTree(avlTree.getRoot(), avlTree.getRoot()));
+//        //6-5,判断第二颗树是否是第一颗树的子树
 //        System.out.println(binaryTree.isSubtree(binaryTree.getRoot(), binaryTree4.getRoot()));
 //        //8-1，反转二叉树
 //        System.out.println(binaryTree.leverUpToDownOrderList());
 //        binaryTree.invertTree(binaryTree.getRoot());
 //        System.out.println(binaryTree.leverUpToDownOrderList());
-        //8-2，根据前序和中序重构二叉树
-        binaryTree.infixOrderList( binaryTree.buildTreeBypreOrderAndInfixOrder(preOrder, infixOrder));
+//        //8-2，根据前序和中序重构二叉树
+//        binaryTree.infixOrderList( binaryTree.buildTreeBypreOrderAndInfixOrder(preOrder, infixOrder));
+//        //9-1,求两个指定节点的路径
+//        List<Node> restList = new ArrayList<>();
+//        binaryTree.getPath(
+//                binaryTree.bstTreeSearch(binaryTree.getRoot(), 10),
+//                binaryTree.bstTreeSearch(binaryTree.getRoot(), 9),
+//                restList);
+//        System.out.println(restList);
 //        //9-2，求和等于某个给定值的所有路径
 //        System.out.println(binaryTree.getAllPathsEqVal(binaryTree.getRoot(), 21));
 //        //10-1，序列化
 //        System.out.println(binaryTree.serialize(binaryTree.getRoot()));
 //        //10-2，反序列化
 //        System.out.println(binaryTree.deSerialize(binaryTree.serialize(binaryTree.getRoot())));
-        
+
     }
 }
 
@@ -171,6 +191,22 @@ class BinaryTree {
     public void buildTree(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             add(root, arr[i]);
+        }
+    }
+
+
+    /**
+     * 3-0, 二叉树递归打印逻辑，重要！分析的基础！
+     *
+     * @param
+     */
+    public void binaryTreeRecritOrderShow(Node localRoot) {
+        if (localRoot != null) {
+            System.out.println("前");       //当前节点去时，有下一个节点打印下一节点内容
+            binaryTreeRecritOrderShow(localRoot.left);
+            System.out.println("中");      //当前节点从左子节点退时，由当前节点打印当前自己内容
+            binaryTreeRecritOrderShow(localRoot.right);
+            System.out.println("后");      //当前节点从右子节点退时，由当前节点打印当前自己内容
         }
     }
 
@@ -301,7 +337,7 @@ class BinaryTree {
                     queue.add(temp.right);
                 }
             }
-            resList.add(0, leverList);
+            resList.add(0, leverList);  //每次都放在list的头位置
         }
         return resList;
     }
@@ -331,6 +367,8 @@ class BinaryTree {
             if (leverFlag % 2 != 0) {
                 leverList = new ArrayList<>();
                 int len = queue1.size();
+
+                //注意，这里定义的是下一层的打印顺序，因此是先加入右，然后再加入左
                 for (int i = 0; i < len; i++) {
                     temp = queue1.poll();
                     leverList.add(temp);
@@ -372,6 +410,7 @@ class BinaryTree {
      */
     public Node preOrderSearch(Node localRoot, int data) {
         if (localRoot != null) {
+
             if (localRoot.data == data) {
                 return localRoot;
             }
@@ -402,13 +441,12 @@ class BinaryTree {
 
             Node resNode;
             resNode = infixOrderSearch(localRoot.left, data);
+            if (resNode != null) {
+                return resNode;
+            }
 
             if (localRoot.data == data) {
                 return localRoot;
-            }
-
-            if (resNode != null) {
-                return resNode;
             }
 
             resNode = infixOrderSearch(localRoot.right, data);
@@ -432,7 +470,6 @@ class BinaryTree {
 
             Node resNode;
             resNode = posOrderSearch(localRoot.left, data);
-
             if (resNode != null) {
                 return resNode;
             }
@@ -467,10 +504,10 @@ class BinaryTree {
 
             Node resNode;
             resNode = btTreeParentSearch(localRoot.left, data);
-
             if (resNode != null) {
                 return resNode;
             }
+
             resNode = btTreeParentSearch(localRoot.right, data);
 
             return resNode;
@@ -516,30 +553,31 @@ class BinaryTree {
             return null;
         }
     }
-    
-    
+
+
     //4-7,查找二叉排序树两个节点的最近公共祖先
     public Node lowestCommonAncestorForBstTreeSearch(Node localRoot, Node node1, Node node2) {
         //localRoot == node1 || localRoot == node2，说明其中一个就是最近公共祖先
-        if (localRoot == null || localRoot == node1 || localRoot == node2){
+        if (localRoot == null || localRoot == node1 || localRoot == node2) {
             return localRoot;
         }
 
-        if (node1.data < localRoot.data && node2.data < localRoot.data){
+        if (node1.data < localRoot.data && node2.data < localRoot.data) {
             return lowestCommonAncestorForBstTreeSearch(localRoot.left, node1, node2);
         }
 
 
-        if (node1.data > localRoot.data && node2.data > localRoot.data ){
+        if (node1.data > localRoot.data && node2.data > localRoot.data) {
             return lowestCommonAncestorForBstTreeSearch(localRoot.right, node1, node2);
         }
 
+        //当进来时上述几个判断条件都不符合，那么就说明该节点就是共同父节点，此时返回
         return localRoot;  //如果两个节点的值都不小于或者大于当前节点，那么当前节点就是最近根节点
     }
 
     //4-8-1,查找一般二叉树两个节点的最近公共祖先（递归）
     public Node lowestCommonAncestorSearchBaseRec(Node localRoot, Node node1, Node node2) {
-        if (localRoot == null || localRoot == node1 || localRoot == node2){
+        if (localRoot == null || localRoot == node1 || localRoot == node2) {
             return localRoot;
         }
         Node left = lowestCommonAncestorSearchBaseRec(localRoot.left, node1, node2);
@@ -548,7 +586,7 @@ class BinaryTree {
         if (left == null) {
             return right;
         }
-        if (right == null){
+        if (right == null) {
             return left;
         }
         return localRoot;
@@ -556,7 +594,7 @@ class BinaryTree {
 
     //4-8-2,查找一般二叉树两个节点的最近公共祖先（非递归）
     public Node lowestCommonAncestorSearchBase(Node localRoot, Node node1, Node node2) {
-        if (localRoot == null || node1 == null || node2 == null){
+        if (localRoot == null || node1 == null || node2 == null) {
             return null;
         }
         List<Node> pathp = new ArrayList<>();
@@ -664,17 +702,17 @@ class BinaryTree {
 
 
     /**
-     *5-4，获取当前节点数的最大直径
+     * 5-4，获取当前节点数的最大直径
+     *
      * @param localRoot
      * @return
      */
-    public int getDiameter(Node localRoot){
+    public int getDiameter(Node localRoot) {
         int left = getLocalRootMaxHeight(localRoot.left);
         int right = getLocalRootMaxHeight(localRoot.right);
-        return left + right;
+        return left + right + 1; //1是头结点本身
     }
-    
-    
+
 
     /**
      * 6-1, 获取节点数量
@@ -683,32 +721,32 @@ class BinaryTree {
      * @return
      */
     public int getNodeNum(Node localRoot) {
-        if (localRoot == null) {
-            return 0;
-        } else {
-            int left = getNodeNum(localRoot.left) + 1;
-            if (localRoot.left == null) {
-                left--;
-            }
-            int right = getNodeNum(localRoot.right) + 1;
-            if (localRoot.right == null) {
-                right--;
-            }
-
-            if (localRoot != root) {
-                return left + right;
-            } else {
-                return left + right + 1;
-            }
-
-        }
-
 //        if (localRoot == null) {
 //            return 0;
 //        } else {
-//            int num = getNodeNumRec(localRoot.left) + getNodeNumRec(localRoot.right) + 1; //后序遍历
-//            return num;
+//            int left = getNodeNum(localRoot.left) + 1;
+//            if (localRoot.left == null) {
+//                left--;
+//            }
+//            int right = getNodeNum(localRoot.right) + 1;
+//            if (localRoot.right == null) {
+//                right--;
+//            }
+//
+//            if (localRoot != root) {
+//                return left + right;
+//            } else {
+//                return left + right + 1;
+//            }
+//
 //        }
+
+        if (localRoot == null) {
+            return 0;
+        } else {
+            int num = getNodeNum(localRoot.left) + getNodeNum(localRoot.right) + 1; //遍历了所有左右节点，每遍历一次就+1
+            return num;
+        }
     }
 
     /**
@@ -732,6 +770,7 @@ class BinaryTree {
 
     /**
      * 7-1,判断两棵树是否相同
+     *
      * @param localRoot1
      * @param localRoot2
      * @return
@@ -747,7 +786,7 @@ class BinaryTree {
 
 
         //相等时继续，不宜利用中序截取变量进行判断
-        if (localRoot1.data == localRoot2.data){
+        if (localRoot1.data == localRoot2.data) {
             return isSamTree(localRoot1.left, localRoot2.left) && isSamTree(localRoot1.right, localRoot2.right);
         }
 
@@ -756,6 +795,7 @@ class BinaryTree {
 
     /**
      * 7-2,判断是否是平衡二叉树
+     *
      * @param localRoot
      * @return
      */
@@ -770,27 +810,41 @@ class BinaryTree {
 
 
     /**
-     * 7-3,判断是否是镜像二叉树
-     * @param root
+     * 7-3,判断一棵树是否是镜像二叉树
+     *
+     * @param localRoot
      * @return
      */
-    public boolean isSymmetricTree(Node root) {
-        return root == null || isSymmetricHelper(root.left, root.right);
+    public boolean isSymmetricTree(Node localRoot) {
+
+        //isSymmetricHelper(localRoot.left, localRoot.right),判断当前节点的左右节点是否相等
+        //如果当前节点为null，说明当前节点的上面所有左右节点都是相等的（已经全部判断完毕）
+        return localRoot == null || isSymmetricHelper(localRoot.left, localRoot.right);
     }
+
     public boolean isSymmetricHelper(Node left, Node right) {
-        if (left == null && right == null)
+        //都为null说明左右节点相等
+        if (left == null && right == null){
             return true;
-        if (left == null || right == null)
+        }
+        //在上述条件下，下面不可能都为null，如果有一个为null，则另外一个一定不为null，此时说明不相等
+        if (left == null || right == null){
             return false;
-        if (left.data == right.data){
+        }
+
+        //如果左右左右节点相等，那么检查下一个左右节点
+        if (left.data == right.data) {
             return isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left);
         }
+
         return false;
     }
 
 
     /**
-     * 7-4, 判断一个树是不是完全二叉树
+     * 7-4, 判断一颗树是不是完全二叉树
+     * 完全二叉树的定义：叶节点只能出现在最下层和次下层，并且最下面一层的结点都集中在该层最左边的若干位置的二叉树
+     *
      * @param localRoot
      * @return
      */
@@ -804,24 +858,24 @@ class BinaryTree {
         queue.add(localRoot);
         //首先下沉到最后一层，
         while (!queue.isEmpty()) {
-            Node tmp = queue.poll();
-            if (tmp.left == null) {  //左子节点为空
-                if (tmp.right != null) {  //右子节点不为空时，不是满二叉树
+            Node temp = queue.poll();
+            if (temp.left == null) {  //左子节点为空，此时如果右子节点不为空，那说明不是完全二叉树
+                if (temp.right != null) {  //右子节点不为空时，不是满二叉树
                     return false;
                 } else {
-                    hasLeaf = true;  //右子节点为空时，说明是叶子节点
+                    hasLeaf = true;  //右子节点为空时，说明当前temp节点是叶子节点
                 }
             } else {  //左子节点不为空，此时如果有右子节点，，那么说明不是完全二叉树
                 if (hasLeaf) {
                     return false;
                 }
-                if (tmp.right == null) {
+                if (temp.right == null) {
                     hasLeaf = true;       //当前节点有左边节点
-                    queue.add(tmp.left);
+                    queue.add(temp.left);
                 }
-                if (tmp.right != null) {  //当右边的子叶不为空，即添加其下一层左右子叶
-                    queue.add(tmp.left);
-                    queue.add(tmp.right);
+                if (temp.right != null) {  //当右边的子叶不为空，即添加其下一层左右子叶
+                    queue.add(temp.left);
+                    queue.add(temp.right);
                 }
             }
         }
@@ -831,6 +885,7 @@ class BinaryTree {
 
     /**
      * 7-5，判断第二颗树是否是第一颗树的子树
+     *
      * @param root1localRoot
      * @param root2
      * @return
@@ -838,9 +893,13 @@ class BinaryTree {
     public boolean isSubtree(Node root1localRoot, Node root2) {
         boolean result = false;
         if (root1localRoot != null && root2 != null) {
+
+            //2，判断以当前节点为根节点的数和roo2子树是否是父子关系
             if (root1localRoot.data == root2.data) {  //如果值相等，那么就要判断剩余的值是否全相等
                 result = checkNext(root1localRoot, root2); //1,先判断两棵树是否是子树关系
             }
+
+            //1，向树的左右分别递归，每递归一次都要判断以当前节点为根节点的数和roo2子树是否是父子关系
             if (!result) {  //如果checkNext直到是真的，那么直接跳过递归
                 result = isSubtree(root1localRoot.left, root2); //如果不是，向左递归
             }
@@ -852,33 +911,35 @@ class BinaryTree {
     }
 
     private boolean checkNext(Node root1localRoot, Node root2) {
-        if (root2 == null){
+        //如果root2==null，说明是子树
+        if (root2 == null) {
             return true;
         }
-        if (root1localRoot == null){
+        if (root1localRoot == null) {
             return false;
         }
-        if (root1localRoot.data != root2.data){
+        if (root1localRoot.data != root2.data) {
             return false;
         }
 
         //相等时跳过去遍历，直到遍历到尾部root2 = null，如果一切顺利，说明值完全相同。后序遍历。
         return checkNext(root1localRoot.left, root2.left) && checkNext(root1localRoot.right, root2.right);
     }
-    
-    
+
+
     /**
      * 8-1,求二叉树的镜像（反转二叉树）
+     *
      * @param localRoot
      * @return
      */
     public Node invertTree(Node localRoot) {
         if (localRoot == null) {
             return localRoot;
-        }else{
+        } else {
             Node leftNodeTemp = localRoot.left;
-            localRoot.left = invertTree(localRoot.right);
-            localRoot.right = invertTree(leftNodeTemp);
+            localRoot.left = invertTree(localRoot.right); //第一趟下来，先把右边节点全部换成左边节点
+            localRoot.right = invertTree(leftNodeTemp);   //第二趟下来，再把左边节点全部换成右边节点
 
             return localRoot;
         }
@@ -886,14 +947,14 @@ class BinaryTree {
 
     //8-2，由前序遍历序列和中序遍历序列重建二叉树
     public Node buildTreeBypreOrderAndInfixOrder(int[] preOrder, int[] infixOrder) {
-        if (preOrder.length == 0 || infixOrder.length == 0){
+        if (preOrder.length == 0 || infixOrder.length == 0) {
             return null;
         }
         return buildTreeHelper01(preOrder, 0, preOrder.length - 1, infixOrder, 0, infixOrder.length - 1);
     }
 
     private Node buildTreeHelper01(int[] preOrder, int preStart, int preEnd, int[] infixOrder, int infixStart, int infixEnd) {
-        if (preStart > preEnd || infixStart > infixEnd){
+        if (preStart > preEnd || infixStart > infixEnd) {
             return null;
         }
         Node root = new Node(preOrder[preStart]);
@@ -912,14 +973,14 @@ class BinaryTree {
 
     //8-3，由中序遍历序列和后序遍历序列重建二叉树
     public Node buildTreeByInfxOrderAndPosOrder(int[] infixOrder, int[] posOrder) {
-        if (infixOrder.length == 0 || posOrder.length == 0){
+        if (infixOrder.length == 0 || posOrder.length == 0) {
             return null;
         }
         return buildTreeHelper02(infixOrder, 0, infixOrder.length - 1, posOrder, 0, posOrder.length - 1);
     }
 
     private Node buildTreeHelper02(int[] infixOrder, int infixStart, int infixEnd, int[] posOrder, int posStart, int posEnd) {
-        if (infixStart > infixEnd || posStart > posEnd){
+        if (infixStart > infixEnd || posStart > posEnd) {
             return null;
         }
         Node root = new Node(posOrder[posEnd]);
@@ -931,9 +992,10 @@ class BinaryTree {
         }
         return root;
     }
-    
+
     /**
      * 9-1,求给定两个节点的路径
+     *
      * @param localRoot
      * @param tailNode
      * @param path
@@ -947,17 +1009,19 @@ class BinaryTree {
         if (localRoot.left != null) {
             path.add(localRoot.left);
             if (getPath(localRoot.left, tailNode, path)) {
-                return true;
+                return true;  //如果找到相等的localRoot == tailNode，那么就马上返回，不再执行下面代码
+            }else{
+                path.remove(path.size() - 1); //如果不对就删除该节点，回退。跟踪递归一定要学会跟踪函数栈。
             }
-            path.remove(path.size() - 1); //如果不对就删除该节点，回退。跟踪递归一定要学会跟踪函数栈。
         }
 
         if (localRoot.right != null) {
             path.add(localRoot.right);
             if (getPath(localRoot.right, tailNode, path)) {
                 return true;
+            }else{
+                path.remove(path.size() - 1);
             }
-            path.remove(path.size() - 1);
         }
 
         return false;
@@ -969,13 +1033,14 @@ class BinaryTree {
      */
     ArrayList<ArrayList<Integer>> res = new ArrayList<>();
     ArrayList<Integer> temp = new ArrayList<>();
+
     public ArrayList<ArrayList<Integer>> getAllPathsEqVal(Node localRoot, int target) {
         //如果是空就返回
         if (localRoot == null) {
             return res;
         }
         //如果数值相等了也返回
-        target -= localRoot.data;  //，每个栈单独存一份变量
+        target -= localRoot.data;  //每个栈单独存一份变量
         temp.add(localRoot.data);
         if (target == 0 /*&& root.left == null && root.right == null*/) {
             res.add(new ArrayList<>(temp));
@@ -986,7 +1051,7 @@ class BinaryTree {
         //向右遍历
         getAllPathsEqVal(localRoot.right, target);
 
-        //如果找到不到，就删除当前临时变量
+        //如果当前节点的向左或者向右都找不到，就删除当前临时节点的值
         temp.remove(temp.size() - 1); //两个都会函数都会执行到这一行代码
 
         return res;
@@ -994,13 +1059,14 @@ class BinaryTree {
 
     /**
      * 10-1.序列化
+     *
      * @param localRoot
      * @return
      */
     public String serialize(Node localRoot) {
-        if (localRoot == null){
+        if (localRoot == null) {
             return "#,";
-        }else{
+        } else {
             StringBuffer resSb = new StringBuffer(localRoot.data + ","); //前序添加：最终是前序添加
             resSb.append(serialize(localRoot.left));  //中序添加
             resSb.append(serialize(localRoot.right)); //后序添加
@@ -1010,6 +1076,7 @@ class BinaryTree {
 
     /**
      * 10-2,反序列化
+     *
      * @param data
      * @return
      */
@@ -1021,9 +1088,10 @@ class BinaryTree {
         }
         return pre(queue);
     }
+
     private Node pre(Queue<String> queue) {
         String val = queue.poll();
-        if (val.equals("#")){
+        if (val.equals("#")) {
             return null;
         }
         //前序中序后序倒数插入
@@ -1032,16 +1100,15 @@ class BinaryTree {
         node.right = pre(queue);
         return node;
     }
-    
+
     /**
      * *******************************************构建平衡二叉树***********************************************
-     * 
      *******************************************************************************************************/
     public void addAsAvlTree(Node localNode, int data) {
         //首先添加节点，然后再判断是否要旋转
         add(localNode, data);
 
-        if (root.left == null && root.right == null){
+        if (root.left == null && root.right == null) {
             return;
         }
 
@@ -1074,7 +1141,7 @@ class BinaryTree {
     }
 
 
-    public void buildAvlTree(int[] arr){
+    public void buildAvlTree(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             addAsAvlTree(root, arr[i]);
         }

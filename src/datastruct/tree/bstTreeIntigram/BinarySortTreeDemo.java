@@ -25,7 +25,7 @@ public class BinarySortTreeDemo {
             binaryTree.addByRecr(arr[i]);
             //1-3，递归添加成平衡树
 //            binaryTree.addByRecrAsAvl(arr[i]);
-            binaryTree2.addByRecr(arr[i]);
+//            binaryTree2.addByRecr(arr[i]);
         }
 //        System.out.println("前序遍历");
 //        binaryTree.preOrderList();
@@ -54,7 +54,7 @@ public class BinarySortTreeDemo {
 //        System.out.println("二叉树中两个节点最近的共同祖先" + binaryTree.lowestCommonAncestorBaseRec(binaryTree.root, binaryTree.search(6), binaryTree.search(9)));
 //        System.out.println("二叉树中两个节点最近的共同祖先" + binaryTree.lowestCommonAncestor(binaryTree.root, binaryTree.search(6), binaryTree.search(9)));
 //        System.out.println("二叉树中两个节点最近的共同祖先" + binaryTree.lowestCommonAncestorForBst(binaryTree.root, new Node(6), new Node(9)));
-        System.out.println("求二叉树的最长直径" + binaryTree.diameterOfBinaryTree(binaryTree.root));
+//        System.out.println("求二叉树的最长直径" + binaryTree.diameterOfBinaryTree(binaryTree.root));
 //        System.out.println("判断是否是完全二叉树" + binaryTree.isCompleteTree(binaryTree.root));
 //        System.out.println("输出第K小的节点" + binaryTree.KthNode(binaryTree.root, 1));
 //        System.out.println("序列化" + binaryTree.serialize(binaryTree.root));
@@ -82,6 +82,7 @@ public class BinarySortTreeDemo {
 //        binaryTree.preOrderList();
 //        binaryTree.infixOrderList();
 //        binaryTree.posOrderList();
+//        binaryTree.binaryTreeRecritOrderShow(binaryTree.root);
 
 //        //2-1，前序查找
 //        System.out.println(binaryTree.preOrderSearch(9));
@@ -129,11 +130,10 @@ class BinaryTree {
      */
     public void binaryTreeRecritOrderShow(Node localRoot) {
         if (localRoot != null) {
-//            System.out.println(localRoot);
             System.out.println("前");       //当前节点去时，有下一个节点打印下一节点内容
-            preOrderList(localRoot.left);
+            binaryTreeRecritOrderShow(localRoot.left);
             System.out.println("中");      //当前节点从左子节点退时，由当前节点打印当前自己内容
-            preOrderList(localRoot.right);
+            binaryTreeRecritOrderShow(localRoot.right);
             System.out.println("后");      //当前节点从右子节点退时，由当前节点打印当前自己内容
         }
     }

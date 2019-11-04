@@ -23,66 +23,66 @@ public class ArrayAndSlinkedListAndStackQueueDemo {
 //        ArrayQueue arrayQueue = new ArrayQueue(5);
 //
 //        //添加
-//        arrayQueue.addQueue(1);
-//        arrayQueue.addQueue(2);
-//        arrayQueue.addQueue(3);
+//        arrayQueue.add(1);
+//        arrayQueue.add(2);
+//        arrayQueue.add(3);
 //
 //        arrayQueue.showQueue();
 //
 //        //获取
-//        int n1 = arrayQueue.getQueue();
+//        int n1 = arrayQueue.poll();
 //        System.out.println("n = " + n1);
 //        arrayQueue.showQueue();
 //
-//        int n2 = arrayQueue.getQueue();
+//        int n2 = arrayQueue.poll();
 //        System.out.println("n = " + n2);
 //        arrayQueue.showQueue();
 //
-//        int n3 = arrayQueue.getQueue();
+//        int n3 = arrayQueue.poll();
 //        System.out.println("n = " + n3);
 //        arrayQueue.showQueue();
 //
-//        arrayQueue.addQueue(4);
+//        arrayQueue.add(4);
 //        arrayQueue.showQueue();
 //
-//        arrayQueue.addQueue(5);
+//        arrayQueue.add(5);
 //        arrayQueue.showQueue();
 //
-//        arrayQueue.addQueue(6); //队列已满
+//        arrayQueue.add(6); //队列已满
 //        arrayQueue.showQueue();
 //
-//        System.out.println(arrayQueue.getHeadQueue());
+//        System.out.println(arrayQueue.peek());
 //        System.out.println(arrayQueue.getTailQueue());
 
 
         /**************************************************
          *                2，循环数组实现
          */
-        CircleArrayQueue circleArrayQueue = new CircleArrayQueue(1 + 5);
-
-        circleArrayQueue.addQueue(1);
-        circleArrayQueue.addQueue(2);
-        circleArrayQueue.addQueue(3);
-        circleArrayQueue.addQueue(4);
-        circleArrayQueue.addQueue(5);
-        circleArrayQueue.showQueue();
-
-//        System.out.println(circleArrayQueue.getHeadQueue());
-
-
-        System.out.println("取节点");
-        System.out.println(circleArrayQueue.getQueue());
-        System.out.println(circleArrayQueue.getQueue());
-        System.out.println(circleArrayQueue.getQueue());
-        System.out.println("取节点后打印节点");
-        circleArrayQueue.showQueue();
-
-
-        circleArrayQueue.addQueue(6);
-        circleArrayQueue.addQueue(7);
-        circleArrayQueue.addQueue(8);
-        System.out.println("添加节点后展示节点");
-        circleArrayQueue.showQueue();
+//        CircleArrayQueue circleArrayQueue = new CircleArrayQueue(1 + 5);
+//
+//        circleArrayQueue.add(1);
+//        circleArrayQueue.add(2);
+//        circleArrayQueue.add(3);
+//        circleArrayQueue.add(4);
+//        circleArrayQueue.add(5);
+//        circleArrayQueue.showQueue();
+//
+//        System.out.println(circleArrayQueue.peek());
+//
+//
+//        System.out.println("取节点");
+//        System.out.println(circleArrayQueue.poll());
+//        System.out.println(circleArrayQueue.poll());
+//        System.out.println(circleArrayQueue.poll());
+//        System.out.println("取节点后打印节点");
+//        circleArrayQueue.showQueue();
+//
+//
+//        circleArrayQueue.add(6);
+//        circleArrayQueue.add(7);
+//        circleArrayQueue.add(8);
+//        System.out.println("添加节点后展示节点");
+//        circleArrayQueue.showQueue();
 
 
 
@@ -90,44 +90,44 @@ public class ArrayAndSlinkedListAndStackQueueDemo {
          *                3，链表实现
          */
 
-//        SLinkQueue sLinkQueue = new SLinkQueue(5);
+        SLinkQueue sLinkQueue = new SLinkQueue(5);
 
-        //方法1，添加
-//        sLinkQueue.addQueue(1);
-//        sLinkQueue.addQueue(2);
-//        sLinkQueue.addQueue(3);
-//        sLinkQueue.addQueue(4);
-//        sLinkQueue.addQueue(5);
+//        方法1，添加
+//        sLinkQueue.add(1);
+//        sLinkQueue.add(2);
+//        sLinkQueue.add(3);
+//        sLinkQueue.add(4);
+//        sLinkQueue.add(5);
 //        sLinkQueue.showQueue();
 //
 //        //方法2，获取
 //        System.out.println("获取队列");
-//        System.out.println(sLinkQueue.getQueue());
-//        System.out.println(sLinkQueue.getQueue());
-//        System.out.println(sLinkQueue.getQueue());
-//        System.out.println(sLinkQueue.getQueue());
-//        System.out.println(sLinkQueue.getQueue()); //5
-//        sLinkQueue.addQueue(1);
-//        System.out.println(sLinkQueue.getQueue());
-//        sLinkQueue.addQueue(2);
-//        System.out.println(sLinkQueue.getQueue());
-//        System.out.println(sLinkQueue.getLinkedListSize());
+//        System.out.println(sLinkQueue.poll());
+//        System.out.println(sLinkQueue.poll());
+//        System.out.println(sLinkQueue.poll());
+//        System.out.println(sLinkQueue.poll());
+//        System.out.println(sLinkQueue.poll()); //5
+//        sLinkQueue.add(1);
+//        System.out.println(sLinkQueue.poll());
+//        sLinkQueue.add(2);
+//        System.out.println(sLinkQueue.poll());
+//        System.out.println("队列中有的元素个数：" + sLinkQueue.getLinkedListSize());
 //        //重新添加队列
-//        sLinkQueue.addQueue(1);
-//        sLinkQueue.addQueue(2);
-//        sLinkQueue.addQueue(3);
-//        sLinkQueue.addQueue(4);
-//        sLinkQueue.addQueue(5);
+//        sLinkQueue.add(1);
+//        sLinkQueue.add(2);
+//        sLinkQueue.add(3);
+//        sLinkQueue.add(4);
+//        sLinkQueue.add(5);
 //        System.out.println("展示列表");
 //        sLinkQueue.showQueue();
-//        System.out.println(sLinkQueue.getLinkedListSize());
+//        System.out.println("队列中有的元素个数：" + sLinkQueue.getLinkedListSize());
 //        //获取头部数据
 //        System.out.println("获取头部数据");
-//        System.out.println(sLinkQueue.getHeadQueue());
+//        System.out.println(sLinkQueue.peek());
 //        System.out.println("取数");
-//        System.out.println(sLinkQueue.getQueue());
+//        System.out.println(sLinkQueue.poll());
 //        System.out.println("获取头部数据");
-//        System.out.println(sLinkQueue.getHeadQueue());
+//        System.out.println(sLinkQueue.peek());
 //        System.out.println("展示数据");
 //        sLinkQueue.showQueue();
 
@@ -136,20 +136,20 @@ public class ArrayAndSlinkedListAndStackQueueDemo {
          *                4，双栈实现
          */
 
-//        StackQueue<Integer> stackQueue = new StackQueue<>();
-//        //1，添加
-//        stackQueue.addQueue(1);
-//        stackQueue.addQueue(2);
-//        stackQueue.addQueue(3);
+        StackQueue<Integer> stackQueue = new StackQueue<>();
+        //1，添加
+        stackQueue.add(1);
+        stackQueue.add(2);
+        stackQueue.add(3);
 //        stackQueue.showQueue();
 
         //2，获取
-//        System.out.println("取数");
-//        System.out.println(stackQueue.getQueue());
-//        System.out.println(stackQueue.getQueue());
-//        System.out.println(stackQueue.getQueue());
-//        System.out.println(stackQueue.getQueue());
-//        System.out.println("取数后展示");
+        System.out.println("取数");
+        System.out.println(stackQueue.poll());
+        System.out.println(stackQueue.poll());
+        System.out.println(stackQueue.poll());
+        System.out.println(stackQueue.poll());
+        System.out.println("取数后展示");
 //        stackQueue.showQueue();
 
     }
@@ -200,7 +200,7 @@ class ArrayQueue {
      *,3，添加数据到队列
      * @param n
      */
-    public void addQueue(int n){
+    public void add(int n){
         //判断队列是否已满
         if(isFull()){
             System.out.println("队列已满！");
@@ -215,7 +215,7 @@ class ArrayQueue {
      *4-1，获取队列
      * @return
      */
-    public int getQueue(){
+    public int poll(){
         if(isEmpty()){
             throw new RuntimeException("队列空，不能取数据！"); //后面不用在写代码或return
         }
@@ -229,7 +229,7 @@ class ArrayQueue {
      * 4-2，获取队列的头节点
      * @return
      */
-    public int getHeadQueue(){
+    public int peek(){
 
         if (isEmpty()){
             throw new RuntimeException("队列为空，没有数据");
@@ -239,7 +239,7 @@ class ArrayQueue {
     }
 
     /**
-     * 4-2，获取队列的头节点
+     * 4-2，获取队列的尾节点
      * @return
      */
     public int getTailQueue(){
@@ -307,7 +307,7 @@ class CircleArrayQueue {
      * 3,添加数据到队列
      * @param n
      */
-    public void addQueue(int n){
+    public void add(int n){
         //判断队列是否已满
         if(isFull()){
             System.out.printf("队列已满！");
@@ -325,7 +325,7 @@ class CircleArrayQueue {
      *4，获取队列
      * @return
      */
-    public int getQueue(){
+    public int poll(){
         if(isEmpty()){
             throw new RuntimeException("队列空，不能取数据！"); //后面不用在写代码或return
         }
@@ -363,7 +363,7 @@ class CircleArrayQueue {
         return (rear + maxSize - front) % maxSize;  //貌似不需要循环取模了，因为所有的操作变量都取模过了
     }
 
-    public int getHeadQueue(){
+    public int peek(){
         if(isEmpty()){
             throw new RuntimeException("队列为空");
         }
@@ -408,7 +408,7 @@ class SLinkQueue{
 
 
     //1,添加
-    public void addQueue (int data){
+    public void add (int data){
        if (isFull()){
            System.out.println("队列已满");
            return;
@@ -418,7 +418,7 @@ class SLinkQueue{
     }
 
     //2,获取
-    public int getQueue (){
+    public int poll (){
        if (isEmpty()){
            System.out.println("队列为空");
            return -1;
@@ -428,7 +428,7 @@ class SLinkQueue{
     }
 
     //3,不删除获取头数据
-    public int getHeadQueue(){
+    public int peek(){
         if (isEmpty()){
             System.out.println("队列为空");
             return -1;
@@ -575,12 +575,12 @@ class StackQueue<E>{
     private Stack<E> stackGet  = new Stack<>();
 
     //1，存操作。没有满判断，也暂时无法展示所有队列节点信息
-     public synchronized void addQueue(E data){
+     public synchronized void add(E data){
         stackAdd.push(data);
     }
 
     //2，取操作
-    public synchronized E getQueue() {
+    public synchronized E poll() {
 
         if (isEmpty()) {
             System.out.println("队列为空");
