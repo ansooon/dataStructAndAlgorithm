@@ -1,4 +1,4 @@
-package concurrent.base.produceconsumer;
+package concurrent.base.producerconsumer;
 
 /**
  * @author zhongshanhuang
@@ -6,5 +6,18 @@ package concurrent.base.produceconsumer;
  * @email zhongshanhuang@caih.com
  * @create 2019-11-06 0:39
  */
-public class producer {
+public class Producer implements Runnable {
+
+    private Medium medium;
+
+    public Producer(Medium medium) {
+        this.medium = medium;
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            medium.put();
+        }
+    }
 }

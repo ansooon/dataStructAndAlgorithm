@@ -1,4 +1,4 @@
-package concurrent.base.producerconsumer;
+package concurrent.base.producerconsumer2;
 
 /**
  * @author zhongshanhuang

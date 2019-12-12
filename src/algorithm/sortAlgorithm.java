@@ -131,14 +131,14 @@ public class sortAlgorithm {
 
 
         //4，归并排序
-        System.out.println("归并排序排序前");
-        System.out.println(Arrays.toString(arr));
-        long start6 = System.currentTimeMillis();
-        Sort.mergeSort(arr, 0, arr.length - 1, new int[arr.length]);
-        long stop6 = System.currentTimeMillis();
-        System.out.println("4归并排序耗时:" + (stop6 - start6) / 100);
-        System.out.println("归并排序排序后");
-        System.out.println(Arrays.toString(arr));
+//        System.out.println("归并排序排序前");
+//        System.out.println(Arrays.toString(arr));
+//        long start6 = System.currentTimeMillis();
+//        Sort.mergeSort(arr, 0, arr.length - 1, new int[arr.length]);
+//        long stop6 = System.currentTimeMillis();
+//        System.out.println("4归并排序耗时:" + (stop6 - start6) / 100);
+//        System.out.println("归并排序排序后");
+//        System.out.println(Arrays.toString(arr));
 
 
         //题外，链表排序

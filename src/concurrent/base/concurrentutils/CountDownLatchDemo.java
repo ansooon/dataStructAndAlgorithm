@@ -1,4 +1,4 @@
-package concurrent.base.utils;
+package concurrent.base.concurrentutils;
 
 /**
  * @author zhongshanhuang

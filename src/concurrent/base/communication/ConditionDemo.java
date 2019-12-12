@@ -7,4 +7,5 @@ package concurrent.base.communication;
  * @create 2019-11-06 0:35
  */
 public class ConditionDemo {
+
 }

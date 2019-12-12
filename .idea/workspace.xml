@@ -2,48 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409302d0-9a45-4571-b541-e1dc45ec38ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dp/DpDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/SolutionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithread/CreateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithread/ReentrantLockDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithread/StateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/numArray/NumArrayDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sort/SortDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strArray/StrArrayDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/LockDemo/MyReentryLockDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/SingletonDemo/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/SynchronizedDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/UnSafeThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/VolatileDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/communication/ConditionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/communication/JoinDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/concurrentutils/CountDownLatchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Medium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Medium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/threadpool/CallableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concurrent/base/threadpool/ThreadPoolDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastruct/tree/practic/BSTTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/examination/ExamDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Factorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/SLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/recursiveAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/recursiveAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/sortAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/algorithm/sortAlgorithm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/linkedList/SLinkedListDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/ArrayQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/CircleArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/CircleArrayQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/SLinkQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/SLinkQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/StackQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/queue/StackQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/ArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/ArrayStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/QueueStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/QueueStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/SlinkedListStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/SlinkedListStack$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/SlinkedListStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/stack/SlinkedListStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeIntigram/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/BinarySortTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/BinarySortTreeDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/BinaryTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/datastruct/tree/bstTreeV2/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution17$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution19$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution19$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution20$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution20$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution33.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution34.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution35.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution38.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution38.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution39.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution39.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution40.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution40.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/Solution9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/SolutionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/leetcode/SolutionDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/numArray/NumArrayDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/numArray/NumArrayDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/sort/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/sort/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/sort/SortDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/datastructAndAlgorithm/sort/SortDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/SolutionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/SolutionDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/numArray/NumArrayDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numArray/NumArrayDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,25 +127,30 @@
     <session id="1311927934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="43" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.44" value="3" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.48" value="4" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.51" value="3" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.55" value="3" />
+          <entry key="project.open.time.57" value="2" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
@@ -127,31 +158,31 @@
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.91" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="77423" />
+          <entry key="java" value="82652" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="77423" />
+          <entry key="JAVA" value="82652" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ReentrantLock" value="1" />
           <entry key="class" value="1" />
-          <entry key="java" value="129" />
+          <entry key="java" value="192" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="129" />
+          <entry key="JAVA" value="192" />
           <entry key="Markdown" value="1" />
           <entry key="UML" value="1" />
         </counts>
@@ -164,22 +195,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
+        <entry file="file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="580" column="7" selection-start-line="580" selection-start-column="7" selection-end-line="580" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sort/SortDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1687">
-              <caret line="269" column="39" lean-forward="true" selection-start-line="269" selection-start-column="39" selection-end-line="269" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="24605">
+              <caret line="1299" column="45" selection-start-line="1299" selection-start-column="45" selection-end-line="1299" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -187,11 +206,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1368">
-              <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="256">
+              <caret line="1140" column="13" selection-start-line="1140" selection-start-column="13" selection-end-line="1140" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sort/SortDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1957">
+              <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -245,36 +270,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/datastruct/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/Queue.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/ArrayQueue.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/ArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/ArrayQueueLoopDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/ArrayLoopQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/SingleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/Josepfu.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/DoubleLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/DLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/SingleLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayLoopQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/findAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/seqSearchAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/searchAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/hashTable/HashTabDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/arrBinaryTree/ArrBinaryTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/avlTree/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/binaryTree/BinaryTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/ThreadedBinaryTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/threadedBinaryTree/BinarySortTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/avlTree/AVLTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/numArray/NumArrayDemo.java" />
         <option value="$PROJECT_DIR$/src/strArray/StrArrayDemo.java" />
         <option value="$PROJECT_DIR$/src/thread/ThreadDemo.java" />
         <option value="$PROJECT_DIR$/src/thread/concurrent/Actor.java" />
@@ -283,18 +282,45 @@
         <option value="$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/multithread/StateDemo.java" />
         <option value="$PROJECT_DIR$/src/multithread/CreateDemo.java" />
         <option value="$PROJECT_DIR$/src/multithread/AQS.java" />
         <option value="$PROJECT_DIR$/src/multithread/ReentrantLock.java" />
         <option value="$PROJECT_DIR$/src/multithread/ReentrantLockDemo.java" />
         <option value="$PROJECT_DIR$/src/dp/DpDemo.java" />
-        <option value="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/leetcode/SolutionDemo.java" />
         <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithmSimple.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/sort/SortDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/practic/BSTTree.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/Demo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/UnSaft.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/UnSafeThreadDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/utils/CountDownLatchDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/SynchronizedDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/SingletonDemo/LazySingleton.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/LockDemo/MyLock.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/LockDemo/MyReentryLockDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/VolatileDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo2.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/communication/JoinDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/communication/Condition.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/communication/ConditionDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Medium.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer/producer.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer/Main.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/producerconsumer/Medium.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Medium.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/threadpool/ThreadPoolDemo.java" />
+        <option value="$PROJECT_DIR$/src/concurrent/base/threadpool/CallableDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/numArray/NumArrayDemo.java" />
+        <option value="$PROJECT_DIR$/src/examination.java" />
+        <option value="$PROJECT_DIR$/src/examination/ExamDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/tree/practic/BSTTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/sortAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/SolutionDemo.java" />
       </list>
     </option>
   </component>
@@ -311,10 +337,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="79" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1552" />
-    <option name="height" value="840" />
+    <option name="x" value="-770" />
+    <option name="y" value="5" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -322,7 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -366,17 +391,37 @@
               <item name="bstTreeV2" type="462c0819:PsiDirectoryNode" />
               <item name="BinarySortTreeDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructAndAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="SortDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programing/Javaworkspace/IDEA/src/datastruct/DoubleLinkedListDemo.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572794816795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575368044748" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../voiceRecordExtract" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -391,11 +436,11 @@
       <recent name="datastruct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\concurrent\base\producerconsumer2" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\algorithm" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\bstTreeV2" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\bstTreeIntigram" />
       <recent name="D:\Programing\Javaworkspace\githubProject\dataStructAndAlgorithm\src\datastruct\tree\arrBinaryTree" />
-      <recent name="D:\Programing\Javaworkspace\IDEA\src\datastruct" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -410,13 +455,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortDemo">
-    <configuration name="CreateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multithread.CreateDemo" />
+  <component name="RunManager" selected="Application.SolutionDemo">
+    <configuration name="CallableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrent.base.threadpool.CallableDemo" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="multithread.*" />
+          <option name="PATTERN" value="concurrent.base.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -424,12 +469,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DpDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.DpDemo" />
+    <configuration name="ExamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examination.ExamDemo" />
+      <module name="datastructAndAlgorithm" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -XX:+PrintGCDetails" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrent.base.producerconsumer2.Main" />
       <module name="datastructAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="concurrent.base.producerconsumer2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastruct.linkedList.SLinkedListDemo" />
+      <module name="datastructAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastruct.linkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -450,46 +522,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.SortDemo" />
-      <module name="datastructAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sortAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.sortAlgorithm" />
-      <module name="datastructAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.CreateDemo" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.CallableDemo" />
       <item itemvalue="Application.SolutionDemo" />
-      <item itemvalue="Application.DpDemo" />
-      <item itemvalue="Application.sortAlgorithm" />
-      <item itemvalue="Application.SortDemo" />
+      <item itemvalue="Application.SLinkedListDemo" />
+      <item itemvalue="Application.ExamDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SortDemo" />
-        <item itemvalue="Application.sortAlgorithm" />
         <item itemvalue="Application.SolutionDemo" />
-        <item itemvalue="Application.DpDemo" />
-        <item itemvalue="Application.CreateDemo" />
+        <item itemvalue="Application.ExamDemo" />
+        <item itemvalue="Application.SLinkedListDemo" />
+        <item itemvalue="Application.CallableDemo" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -543,19 +589,34 @@
       <workItem from="1572237141426" duration="18136000" />
       <workItem from="1572496469865" duration="19512000" />
       <workItem from="1572706104519" duration="32082000" />
-      <workItem from="1572841351709" duration="244000" />
+      <workItem from="1572841351709" duration="9665000" />
+      <workItem from="1572962960742" duration="10544000" />
+      <workItem from="1573002506327" duration="8076000" />
+      <workItem from="1573180790102" duration="1899000" />
+      <workItem from="1573553682321" duration="7235000" />
+      <workItem from="1573741902862" duration="95000" />
+      <workItem from="1573799024575" duration="3497000" />
+      <workItem from="1573995265673" duration="56000" />
+      <workItem from="1574318748023" duration="6251000" />
+      <workItem from="1574681861977" duration="6153000" />
+      <workItem from="1574750195548" duration="951000" />
+      <workItem from="1575258079108" duration="449000" />
+      <workItem from="1575299175477" duration="1229000" />
+      <workItem from="1575356680696" duration="4602000" />
+      <workItem from="1576131979610" duration="1705000" />
+      <workItem from="1576164572192" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482981000" />
+    <option name="totallyTimeSpent" value="545181000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7629459" visible="true" weight="0.26873663" />
-      <window_info id="Structure" order="1" sideWeight="0.23705408" side_tool="true" visible="true" weight="0.26873663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6676876" visible="true" weight="0.30592993" />
+      <window_info id="Structure" order="1" sideWeight="0.3323124" side_tool="true" visible="true" weight="0.30592993" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -563,8 +624,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.40715882" side_tool="true" weight="0.2028302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24971232" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.15880322" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25727412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.431853" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -572,7 +633,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.12773302" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.12658228" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -714,192 +775,34 @@
           <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java</url>
+          <line>1248</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java</url>
+          <line>348</line>
+          <properties />
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java</url>
+          <line>1449</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java</url>
+          <line>1443</line>
+          <properties />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/ArrayDeque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="186" column="21" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/CircleArrayQueueDemo.java" />
-    <entry file="file://$PROJECT_DIR$/Test01/out/production/Test01/Test01.class" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="210" column="13" lean-forward="true" selection-start-line="210" selection-start-column="13" selection-end-line="210" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/binaryTree/TreeNode.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/arrBinaryTree/ArrBinaryTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ArrBinaryTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/BinaryTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="412" column="1" lean-forward="true" selection-start-line="412" selection-start-column="1" selection-end-line="412" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/avlTree/TreeNode.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/binaryTree/BinaryTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="207" column="25" lean-forward="true" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/ThreadedBinaryTreeDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/ThreadedBinaryTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/threadedBinaryTree/BinarySortTreeDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/avlTree/AVLTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2135">
-          <caret line="384" column="33" selection-start-line="384" selection-start-column="33" selection-end-line="384" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="105" column="28" lean-forward="true" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="150" column="7" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/hashTable/HashTabDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2717">
-          <caret line="150" column="19" lean-forward="true" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/Josepfu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1861">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thread/ThreadDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/strArray/StrArrayDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2356">
-          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thread/concurrent/A.java" />
-    <entry file="file://$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="270" column="9" lean-forward="true" selection-start-line="270" selection-start-column="9" selection-end-line="270" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8094">
-          <caret line="587" column="9" lean-forward="true" selection-start-line="587" selection-start-column="9" selection-end-line="587" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTree/BinarySortTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4247">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thread/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/recursiveAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="581" column="42" lean-forward="true" selection-start-line="581" selection-start-column="42" selection-end-line="581" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeIntigram/BinarySortTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="137" column="18" lean-forward="true" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/multithread/CreateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/multithread/StateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/multithread/AQS.java" />
     <entry file="uml://JAVA/java.util.concurrent.locks.ReentrantLock">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1015,24 +918,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="1911" column="18" selection-start-line="1911" selection-start-column="18" selection-end-line="1911" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="279" column="13" selection-start-line="279" selection-start-column="13" selection-end-line="279" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="211" column="38" lean-forward="true" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1043,21 +932,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/numArray/NumArrayDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7101">
-          <caret line="686" column="13" lean-forward="true" selection-start-line="686" selection-start-column="13" selection-end-line="686" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithmSimple.java" />
-    <entry file="file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="941" column="27" lean-forward="true" selection-start-line="941" selection-start-column="27" selection-end-line="941" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/searchAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1065,30 +940,243 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/Demo.java" />
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/UnSafeThreadDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/concurrentutils/CountDownLatchDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="266" column="56" selection-start-line="266" selection-start-column="56" selection-end-line="266" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/VolatileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/LockDemo/MyReentryLockDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/communication/WaitDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/producerconsumer/Producer.java" />
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/producerconsumer/Consumer.java" />
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/producerconsumer/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/producerconsumer/Medium.java" />
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Medium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer2/Producer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="1188" column="7" lean-forward="true" selection-start-line="1188" selection-start-column="7" selection-end-line="1188" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/threadpool/ThreadPoolDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/threadpool/CallableDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/communication/ConditionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/stack/ArrayAndSlinkedAndQueueStackDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3933">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/queue/ArrayAndSlinkedListAndStackQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="593" column="9" lean-forward="true" selection-start-line="593" selection-start-column="9" selection-end-line="593" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer/Medium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/communication/JoinDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/producerconsumer/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/SingletonDemo/LazySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/base/SynchronizedDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/numArray/NumArrayDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="517" column="27" lean-forward="true" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SingleLinkedListDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examination.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../JavaJDK/Java1.8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examination/ExamDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/linkedList/SLinkedListDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1832">
+          <caret line="862" column="4" selection-start-line="862" selection-start-column="4" selection-end-line="862" selection-end-column="4" />
+          <folding>
+            <element signature="e#24290#24291#0" expanded="true" />
+            <element signature="e#24330#24331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/sortAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="580" column="7" selection-start-line="580" selection-start-column="7" selection-end-line="580" selection-end-column="7" />
+        <state relative-caret-position="57">
+          <caret line="363" column="9" lean-forward="true" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastruct/tree/practic/BSTTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="126" selection-start-line="126" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/SolutionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24605">
+          <caret line="1299" column="45" selection-start-line="1299" selection-start-column="45" selection-end-line="1299" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1687">
-          <caret line="269" column="39" lean-forward="true" selection-start-line="269" selection-start-column="39" selection-end-line="269" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1957">
+          <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastruct/tree/bstTreeV2/BinarySortTreeDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368">
-          <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="1140" column="13" selection-start-line="1140" selection-start-column="13" selection-end-line="1140" selection-end-column="13" />
         </state>
       </provider>
     </entry>

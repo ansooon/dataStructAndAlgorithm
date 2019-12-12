@@ -20,13 +20,13 @@ public class SLinkedListDemo {
 
 
         //方法1-1，尾部添加
-//        sLinkedList.addTail(1);
-//        sLinkedList.addTail(3);
-//        sLinkedList.addTail(2);
-//        sLinkedList.addTail(1);
-//        sLinkedList.addTail(4);
-//        sLinkedList.addTail(5);
-//        sLinkedList.addTail(8);
+        sLinkedList.addTail(1);
+        sLinkedList.addTail(3);
+        sLinkedList.addTail(2);
+        sLinkedList.addTail(1);
+        sLinkedList.addTail(4);
+        sLinkedList.addTail(5);
+        sLinkedList.addTail(8);
 //        sLinkedList.addTail(7);
 //        sLinkedList.addTail(7);
 //        sLinkedList.addTail(7);
@@ -44,7 +44,7 @@ public class SLinkedListDemo {
 
 
         //方法2-1，删除
-        sLinkedList.remove(7);
+//        sLinkedList.remove(7);
 //        sLinkedList.printNodeData();
 
         //方法2-2，在不在不知道头结点的情况下删除指定结点：
@@ -165,6 +165,7 @@ public class SLinkedListDemo {
         //方法12，排序
 //        sLinkedList.sortByData();
 //        sLinkedList.sortByNode();
+//        sLinkedList.sortList();
 //        sLinkedList.sortByCreateNode();
 //        sLinkedList.printNodeData();
 
@@ -740,7 +741,34 @@ class SLinkedList {
         }
     }
 
-    //方法12-2，值排序（注意交换的是节点）（了解即可）
+
+    //方法12-2，值排序（注意交换的是值）,选择排序
+    public void sortList() {
+        Node cur = head;
+
+        while (cur.next != null) {
+            int min = cur.data;
+            Node pMin = cur;
+            Node next = cur.next;
+            while (next != null) {
+                if (next.data < min) {
+                    min = next.data;
+                    pMin = next;
+                }
+
+                next = next.next;
+            }
+
+            if (pMin != cur) {
+                pMin.data = cur.data;
+                cur.data = min;
+            }
+
+            cur = cur.next;
+        }
+    }
+
+    //方法12-3，值排序（注意交换的是节点）（了解即可）
     public void sortByNode() {
         if (head == null || head.next == null) {
             return;
@@ -832,6 +860,69 @@ class SLinkedList {
             current = current.next;
         }
     }
+
+
+    //定义数据结构体
+    class ListNode{
+        public int data;
+        public ListNode next;
+        public ListNode(int data){
+            this.data = data;
+        }
+    }
+
+
+    //面试题
+    class Solution{
+
+        //1，部分反转链表
+        public ListNode reverse(ListNode head, int size){
+            if(null == head || head.next == null){
+                return head;
+            }
+
+            //获取链表长度
+            ListNode cur = head;
+            int len = 0;
+            while(cur != null){
+                len++;
+                cur = cur.next;
+            }
+
+            if(size > len){
+                return head;
+            }
+
+            ListNode rHead = null;
+            ListNode next = null;
+            cur = head;
+            for(int i = 0; i < size; i++){
+                next = cur.next;
+                cur.next = rHead;
+                rHead = cur;
+                cur = next;
+            }
+
+            head.next = cur;
+
+            return rHead;
+        }
+
+        //2，打印链表
+        public void list(ListNode head){
+            ListNode cur = head;
+            while(cur != null){
+                System.out.println(cur.data);
+                cur = cur.next;
+            }
+        }
+    }
+
+
+
+
+
+
 
 
 }

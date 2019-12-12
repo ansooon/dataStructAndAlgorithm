@@ -12,7 +12,7 @@ import java.util.concurrent.locks.Lock;
  */
 
 
-public class ReentryLockDemo {
+public class MyReentryLockDemo {
 
     public Lock lock = new MyLock();
 
@@ -31,7 +31,7 @@ public class ReentryLockDemo {
 
 
     public static void main(String[] args) {
-        ReentryLockDemo reentryDemo = new ReentryLockDemo();
+        MyReentryLockDemo reentryDemo = new MyReentryLockDemo();
         reentryDemo.methodA();
     }
 
@@ -45,7 +45,7 @@ class MyLock implements Lock {
 
     @Override
     public void lock() {
-        if (isHoldLock && Thread.currentThread() != holdLockThread) {
+        if (isHoldLock && Thread.currentThread() != holdLockThread) {  //如果已经有线程拿到锁，那么其他线程只能wait
             try {
                 wait();
             } catch (InterruptedException e) {

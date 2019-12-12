@@ -123,10 +123,10 @@ public class NumArrayDemo {
 //        }
 
         //16，滑动窗口的最大值
-//        int[] arr = {2, 3, 4, 2, 6, 2, 5, 1};
-//        MaxInWindows maxInWindows = new MaxInWindows();
-//        System.out.println(maxInWindows.maxInWindowsByForce(arr, 3));
-//        System.out.println(maxInWindows.maxInWindowsByQueue(arr, 3));
+        int[] arr = {2, 3, 4, 2, 6, 2, 5, 1};
+        MaxInWindows maxInWindows = new MaxInWindows();
+        System.out.println(maxInWindows.maxInWindowsByForce(arr, 3));
+        System.out.println(maxInWindows.maxInWindowsByQueue(arr, 3));
 
         //17，找最大最小值
 //        int[] arr = {2, 3, 4, 2, 6, 2, 5, 1, 0};
@@ -205,11 +205,11 @@ public class NumArrayDemo {
 //        System.out.println(getMixed.getMixed(arr1, arr2));
 
         //31,
-        int[] arr = {1,5,3,2,6};
-        GetReverseCnt getReverseCnt = new GetReverseCnt();
-        System.out.println(getReverseCnt.getReverseCnt(arr));
-        getReverseCnt.mergeSortAndGetReverseCnt(arr, 0, arr.length - 1);
-        System.out.println(getReverseCnt.reverseCnt);
+//        int[] arr = {1,5,3,2,6};
+//        GetReverseCnt getReverseCnt = new GetReverseCnt();
+//        System.out.println(getReverseCnt.getReverseCnt(arr));
+//        getReverseCnt.mergeSortAndGetReverseCnt(arr, 0, arr.length - 1);
+//        System.out.println(getReverseCnt.reverseCnt);
 
     }
 }

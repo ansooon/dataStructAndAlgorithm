@@ -291,6 +291,7 @@ class BinaryTree {
                 }
                 if (temp.right != null) {
                     queue.add(temp.right);
+
                 }
 //                if (temp.right != null) {
 //                    queue.add(temp.right);
@@ -344,7 +345,7 @@ class BinaryTree {
 
 
     /**
-     * 3-6,之字形打印
+     * 3-6-1,之字形打印
      *
      * @return
      */
@@ -400,6 +401,7 @@ class BinaryTree {
         }
         return resList;
     }
+
 
     /**
      * 4-1，一般二叉树前序查找

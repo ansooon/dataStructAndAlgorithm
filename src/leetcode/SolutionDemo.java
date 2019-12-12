@@ -34,9 +34,15 @@ public class SolutionDemo {
 //        System.out.println(solution3.subOfLongestSubstringBySet("abba"));
 //        System.out.println(solution3.subOfLongestSubstringByMap("abba"));
 
+
+        //4, 寻找两数组的中位数
+//        Solution4 solution4 = new Solution4();
+//        System.out.println(solution4.findMedianSortedArrays(new int[]{1, 2, 3, 4}, new int[]{5, 6, 7, 8, 9}));
+
 //        //5，最长回文子串
 //        Solution5 solution5 = new Solution5();
-//        System.out.println(solution5.longestPalindrome(""));
+//        System.out.println(solution5.longestPalindromeByForce(""));
+//        System.out.println(solution5.longestPalindromeByDp1("babad"));
 
 //        //6,打印Z字形
 //        Solution6 solution6 = new Solution6();
@@ -105,8 +111,33 @@ public class SolutionDemo {
 //        System.out.println(solution39.combinationSum(new int[]{2, 3, 6, 7}, 7));
 
         //40，只可以取一次
-        Solution40 solution40 = new Solution40();
-        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
+//        Solution40 solution40 = new Solution40();
+//        System.out.println(solution40.combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
+
+
+        //-------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+//        Solution557 solution557 = new Solution557();
+//        System.out.println(solution557.reverseWords("Let's take LeetCode contest"));
+
+        //238. 除自身以外数组的乘积
+//        Solution238 solution238 = new Solution238();
+//        System.out.println(Arrays.toString(solution238.productExceptSelf(new int[] {1,2,3,4})));
+
+
+        //42,接雨水
+        Solution42 solution42 = new Solution42();
+        System.out.println(solution42.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+//        System.out.println(solution42.trap(new int[] {4,2,3}));
+
+
+        //字符串相乘
+//        Solution43 solution43 = new Solution43();
+//        System.out.println(solution43.multiply("123", "456"));
+
+        //49，生成旋转数组
+//        Solution59 solution59 = new Solution59();
+//        System.out.println(solution59.generateMatrix(3));
     }
 }
 
@@ -269,7 +300,9 @@ class Solution3 {
  * 5，最长回文子串
  */
 class Solution5 {
-    public String longestPalindrome(String s) {
+
+    //方法1：暴力法
+    public String longestPalindromeByForce(String s) {
         int len = s.length();
         String sSub = "";
         String huiWenMax = "";
@@ -295,6 +328,61 @@ class Solution5 {
         }
 
         return true;
+    }
+
+
+    //方法2：动态规划法
+    public String longestPalindromeByDp1(String s) {
+        //动态规划2
+        //定义一个结构保存所有字串，存的是下标
+        class Str {
+            int i;
+            int j;
+
+            Str(int i, int j) {
+                this.i = i;
+                this.j = j;
+            }
+        }
+
+        //针对特殊情况进行处理
+        if (s.equals("") || s.length() == 1) {
+            return s;
+        }
+
+        //存储元回文串
+        ArrayList<Str> al = new ArrayList<>();
+        for (int i = 0; i < s.length(); i++) {
+            Str str = new Str(i, i);
+            al.add(str);
+            if (i != s.length() - 1) { //如果不是最后1个字符
+                //如果当前字符等于后一个字符，那么也要将该重复子串添加到单元数组中
+                if (s.charAt(i) == s.charAt(i + 1)) {
+                    Str str2 = new Str(i, i + 1);
+                    al.add(str2);
+                }
+            }
+        }
+
+        Str largeStr = new Str(0, 0); //存储最大
+        for (Str str : al) {
+            //向两边扩展
+            while (str.i != 0 && str.j != s.length() - 1) {
+                if (s.charAt(str.i - 1) == s.charAt(str.j + 1)) {
+                    str.i--;
+                    str.j++;
+                } else {
+                    break;
+                }
+            }
+
+            //更新最大子串
+            if ((str.j - str.i) >= (largeStr.j - largeStr.i)) {
+                largeStr = str;
+            }
+        }
+
+        return s.substring(largeStr.i, largeStr.j + 1);
     }
 }
 
@@ -1115,5 +1203,276 @@ class Solution40 {
             findCombinationSum2(candidates, i + 1, len, residue - candidates[i], stack, res);
             stack.pop();
         }
+    }
+}
+
+
+//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+class Solution557 {
+    public String reverseWords(String s) {
+        String words[] = s.split(" ");
+        StringBuilder res = new StringBuilder();
+        for (String word : words)
+            res.append(new StringBuffer(word).reverse().toString() + " ");
+        return res.toString().trim();
+    }
+
+    //方法2，意义在于对字符和字符串的操作
+    public String reverseWords2(String s) {
+        StringBuilder sb = new StringBuilder(s);
+        sb.append(" ");
+
+        Stack<String> stack = new Stack<>();
+        StringBuilder resSb = new StringBuilder();
+
+        for (int i = 0; i < sb.length(); i++) {
+            if (!String.valueOf(sb.charAt(i)).equals(" ")) {
+                stack.push(String.valueOf(s.charAt(i)));
+            } else {
+                while (!stack.isEmpty()) {
+                    resSb.append(stack.pop());
+                }
+                resSb.append(" ");
+            }
+        }
+
+        return resSb.toString().substring(0, resSb.length() - 1);
+    }
+}
+
+/**
+ * 238. 除自身以外数组的乘积
+ */
+class Solution238 {
+    public int[] productExceptSelf(int[] nums) {
+        int[] res = new int[nums.length];
+        int k = 1;
+        for (int i = 0; i < res.length; i++) {
+            res[i] = k;
+            k = k * nums[i]; // 此时数组存储的是除去当前元素左边的元素乘积
+        }
+        k = 1;
+        for (int i = res.length - 1; i >= 0; i--) {
+            res[i] *= k; // k为该数右边的乘积。
+            k *= nums[i]; // 此时数组等于左边的 * 该数右边的。
+        }
+        return res;
+    }
+}
+
+
+//42. 接雨水
+class Solution42 {
+    public int trap(int[] height) {
+        if (height.length == 0) {
+            return 0;
+        }
+
+        int max = height[0];
+        int pMax = 0;
+        for (int i = 1; i < height.length; i++) {
+            if (height[i] > max) {
+                max = height[i];
+                pMax = i;
+            }
+        }
+
+        int tempSum = 0;
+        int sum = 0;
+        int leftHight = height[0];
+        int rightHight = 0;
+        //升序
+        for (int i = 1; i <= pMax; i++) {
+            rightHight = height[i];
+            if (rightHight < leftHight) {
+                tempSum = tempSum + (leftHight - rightHight);
+            } else {
+                sum = sum + tempSum;
+                tempSum = 0; //注意清零
+                leftHight = height[i];
+            }
+        }
+
+        //降序，从后面往前计算
+        tempSum = 0;
+        rightHight = height[height.length - 1];  //rightHight, leftHight
+        for (int i = height.length - 2; i >= pMax; i--) {
+            leftHight = height[i];
+            if (leftHight < rightHight) {
+                tempSum = tempSum + (rightHight - leftHight);
+            } else {
+                sum = sum + tempSum;
+                tempSum = 0; //注意清零
+                rightHight = height[i];
+            }
+        }
+
+        return sum;
+    }
+}
+
+
+//4,寻找两个有序数组的中位数
+class Solution4 {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int m = nums1.length;
+        int n = nums2.length;
+
+        // 保证num1的长度总是小于或等于nums2
+        if (m > n) {
+            int[] temp = nums1;
+            nums1 = nums2;
+            nums2 = temp;
+            int lengthTemp = m;
+            m = n;
+            n = lengthTemp;
+        }
+
+        int imax = m, imin = 0;       //数组1（较小数组）的下标
+        int half = (m + n + 1) / 2;   //连个数组的中间下标
+        //开始查找（较小数组）
+        while (imax >= imin) {
+            int i = (imax + imin) / 2; //较小数组中间下标
+            int j = half - i;
+            // i 过小且i可以再增大
+            if (i < imax && nums2[j - 1] > nums1[i]) {
+                imin = i + 1;
+            } else if (i > imin && nums1[i - 1] > nums2[j]) { //// i 过大且i可以再减小
+                imax = i - 1;
+            } else {
+                int leftmax = 0;
+                // left_num1为空时
+                if (i == 0) {
+                    leftmax = nums2[j - 1];
+                }
+                // left_num2为空时
+                else if (j == 0) {
+                    leftmax = nums1[i - 1];
+                } else {
+                    leftmax = Math.max(nums1[i - 1], nums2[j - 1]);
+                }
+
+                // 当m+n 为奇数时,返回奇数解
+                if ((m + n) % 2 == 1) {
+                    return leftmax;
+                }
+
+                int rightmin = 0;
+                // right_num1为空时
+                if (i == m) {
+                    rightmin = nums2[j];
+                }
+                // right_num2为空时
+                else if (j == n) {
+                    rightmin = nums1[i];
+                } else {
+                    rightmin = Math.min(nums1[i], nums2[j]);
+                }
+                // 当m+n 为偶数时,返回偶数解
+                return (leftmax + rightmin) / 2.0;
+            }
+        }
+
+        return 0.0;
+    }
+}
+
+//43. 字符串相乘
+class Solution43 {
+    public String multiply(String num1, String num2) {
+        if (num1.equals("0") || num2.equals("0")) {
+            return "0";
+        }
+        // 保存计算结果
+        String res = "0";
+
+        // num2 逐位与 num1 相乘
+        for (int i = num2.length() - 1; i >= 0; i--) {
+            int carry = 0;
+            // 保存 num2 第i位数字与 num1 相乘的结果
+            StringBuilder temp = new StringBuilder();
+            // 补 0
+            for (int j = 0; j < num2.length() - 1 - i; j++) {
+                temp.append(0); //num2的个位则补0个0，十位则补1个0，百位则补2个0
+            }
+            int n2 = num2.charAt(i) - '0';
+
+            // num2 的第 i 位数字 n2 与 num1 相乘
+            for (int j = num1.length() - 1; j >= 0 || carry != 0; j--) {
+                int n1 = j < 0 ? 0 : num1.charAt(j) - '0';
+                int product = (n1 * n2 + carry) % 10;
+                temp.append(product);
+                carry = (n1 * n2 + carry) / 10;
+            }
+            // 将当前结果与新计算的结果求和作为新的结果
+            res = addStrings(res, temp.reverse().toString());  //将结果反转过来：temp.reverse().toString()
+        }
+        return res;
+    }
+
+    /**
+     * 对两个字符串数字进行相加，返回字符串形式的和
+     */
+    public String addStrings(String num1, String num2) {
+        StringBuilder builder = new StringBuilder();
+        int carry = 0;
+        for (int i = num1.length() - 1, j = num2.length() - 1;
+             i >= 0 || j >= 0 || carry != 0;
+             i--, j--) {
+            int x = i < 0 ? 0 : num1.charAt(i) - '0';
+            int y = j < 0 ? 0 : num2.charAt(j) - '0';
+            int sum = (x + y + carry) % 10;
+            builder.append(sum);
+            carry = (x + y + carry) / 10;
+        }
+        return builder.reverse().toString();
+    }
+}
+
+
+//59. 螺旋矩阵 II，生成方阵
+class Solution59 {
+    public int[][] generateMatrix(int n) {
+        int[][] matrix = new int[n][n];
+        if (n == 0) {
+            return matrix;
+        }
+
+        int num = 1;
+        int xLeft = 0;
+        int xRight = n - 1;
+        int yTop = 0;
+        int yBottom = n - 1;
+        int tar = n * n;
+
+        while (num <= tar) {
+            for (int i = xLeft; i <= xRight; i++) {
+                matrix[yTop][i] = num++;
+
+            }
+
+            for (int i = yTop + 1; i <= yBottom; i++) {
+                matrix[i][xRight] = num++;
+            }
+
+
+            for (int i = xRight - 1; i >= xLeft; i--) {
+                matrix[yBottom][i] = num++;
+
+            }
+
+            for (int i = yBottom - 1; i > yTop; i--) {   //i > yTop
+                matrix[i][xLeft] = num++;
+
+            }
+
+            xLeft++;
+            xRight--;
+            yTop++;
+            yBottom--;
+
+        }
+        return matrix;
     }
 }
