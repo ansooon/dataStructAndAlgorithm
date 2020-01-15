@@ -75,5 +75,6 @@ class Stream {
     public static void collect2List(List<Integer> nums){
         List<String> collect = nums.stream().map(String::valueOf).collect(Collectors.toList());
         System.out.println(collect);
+        
     }
 }
