@@ -50,6 +50,7 @@ class Stream {
     public static void filter(List<Integer> nums) {
         List<Integer> collect = nums.stream().filter(Objects::nonNull).collect(Collectors.toList());
         System.out.println(collect);
+
     }
 
     //3, map
