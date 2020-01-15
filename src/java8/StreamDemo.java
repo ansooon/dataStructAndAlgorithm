@@ -69,7 +69,7 @@ class Stream {
     public static void collect2Set(List<Integer> nums){
         Set<String> collect = nums.stream().map(String::valueOf).collect(Collectors.toSet());
         System.out.println(collect);
-        
+
     }
 
     //4-3. collect.toList
